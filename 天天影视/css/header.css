@@ -1,0 +1,116 @@
+*{margin:0;padding:0;}
+#head{
+    width:1200px;
+    margin:0 auto;
+}
+#logo>span{
+    display:block;
+    color:#00f;
+    font-size:40px;
+    margin-top:10px;
+    float:left;
+    margin:15px 3px;
+}
+#head ul{
+    list-style:none;
+    margin-top:10px;
+}
+#head .reg-list{
+    float:right;
+}
+.reg-list li{
+    float:left;
+    margin-right:5px;
+}
+.reg-list li:first-child a,.reg-list li:nth-child(2) a{
+    color:#f00;
+}
+.reg-list li:first-child a:hover,.reg-list li:nth-child(2) a:hover{
+    text-decoration: underline;
+}
+.reg-list li a,.family ul li a{
+    text-decoration:none;
+    font-size:14px;
+}
+.reg-list li:nth-child(3) a:hover,.reg-list li:nth-child(4) a:hover,.reg-list li:nth-child(5) a:hover,.reg-list li:nth-child(6) a:hover{
+    color:#04AFF5;
+    text-decoration: underline;
+}
+.reg-list li img,.reg-list li a{
+    vertical-align: middle;
+}
+#head input{
+    margin:10px 0 0 350px;
+    width:400px;height:30px;
+    border:1px solid #04AFF5;
+    border-radius:5px;
+    padding:0px 20px;
+}
+#head .search,#head .play_record{
+    display:inline-block;
+    width:50px;
+    height:32px;
+    background:#f5f5f5;
+    border:1px solid #ddd;
+    text-align:center;
+    line-height:32px;
+    text-decoration:none;
+    border-radius:5px;
+    margin:0 10px;
+    font-size:14px;
+}
+#head .play_record{
+    background: #ffffff;
+}
+#head .play_record>img,#head .play_record>span{
+    vertical-align: middle;
+}
+#head .search+a{
+    width:98px;
+    color:#0D519C;
+    border:1px solid #2E8EDB;
+}
+.nav{
+    width:1200px;
+    height:40px;
+    background:#4b6cf3;
+    margin-top:10px;
+}
+.nav ul li{
+    list-style:none;
+    float:left;
+    font-size:18px;
+}
+.nav ul li a{
+    display: inline-block;
+    margin: 0px 10px;
+    padding: 0px 10px;
+    height: 40px;
+    line-height: 40px;
+    color:#fff;
+    text-decoration:none;
+}
+.nav ul li:hover{
+    background: #0000ff;
+}
+.family{
+    width:1200px;
+    height:10px;
+}
+.family>ul{
+    clear:both;
+}
+.family ul li{
+    list-style:none;
+    margin:8px 8px;
+    color:#000;
+    font-size:15px;
+    float:left;
+}
+.family>ul>li:first-child a{
+    color:#1540F0;
+}
+.family>ul>li:nth-child(11) a{
+    margin-left:100px;
+    color:#1540F0;
+}

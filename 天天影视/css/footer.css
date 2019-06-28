@@ -1,0 +1,16 @@
+#hr{clear:both;}
+footer{
+    width:1210px;
+    text-align:center;
+    margin:0 auto;
+}
+footer p,ul{
+    margin:0;
+}
+#footer-p{
+    clear:both;
+}
+#footer>li{
+    list-style:none;
+    display:inline;
+}
