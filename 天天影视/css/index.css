@@ -1,0 +1,604 @@
+/*清除所有元素的内外边距*/
+*{margin:0;padding:0;}
+/*设置最外层div的宽度，内容水平居中*/
+.box{
+    width:1200px;
+    margin:0 auto;
+}
+/*设置头部宽度，高度*/
+.my-header{
+    width:100%;
+    height:170px;
+}
+/*轮播图div的样式*/
+.carousel{
+    width:1210px;
+    height:350px;
+    background: linear-gradient(to right,#ddd,#999);
+}
+.carousel-img{
+    float:left;
+}
+/*轮播图右侧条目样式*/
+.carousel-item{
+    list-style:none;
+    margin-top:10px;
+}
+.carousel-item{
+    width:480px;
+    height:350px;
+    margin-top:20px;
+    float:left;
+}
+.carousel-item>ul li{
+    width: 530px;
+    height:50px;
+    margin-left:40px;
+    list-style:none;
+    font-size:22px;
+    font-weight:bolder;
+}
+.carousel-item>ul li:hover{
+    background: #777;
+}
+.carousel-item>ul li a {
+    height: 50px;
+    line-height: 50px;
+    color:#fff;
+    text-decoration: none;
+}
+/* 侧边栏样式 */
+.index_nav{
+    width: 80px;
+    height: 220px;
+    position: fixed;
+    left: 10px;
+    background-color: rgba(200,200,200,0.5);
+    text-align: center;
+    border-radius: 15px;
+    display: flex;
+}
+.index_nav ul{
+    list-style: none;
+    align-self: center;
+}
+.index_nav ul li a:hover{
+    background: #1540F0;
+    color: white;
+}
+.index_nav ul li a{
+    color: #1540F0;
+    font-size: 14px;
+    text-decoration: none;
+    font: bolder;
+    width: 80px;
+    display: inline-block;
+    padding: 8px 0;
+}
+/*热播影视样式*/
+h3{
+    color:#666666;
+    clear:both;
+    margin-bottom:10px;
+    margin-left:8px
+}
+.hot-tv-img{
+    text-align:center;
+    float:left;
+    margin:10px;
+}
+.hot-tv-img img{
+    width:180px;
+    height:250px;
+}
+.hot-tv-img a,.tv a,.film a,.comic a,.variety a{
+    position:relative;
+}
+.hot-tv-img a span,.tv a span,.film a span,.comic a span,.variety a span{
+    position:absolute;
+    top: -3px;
+    left: 0px;
+    width: 100%;
+    height: 20px;
+    background: rgba(30,30,30,0.4);
+    font-size: 10px;
+    color: #ffffff;
+    line-height: 20px;
+}
+.hot-tv-img p a{
+    text-decoration:none;
+    color:#00f;
+}
+/*电视节目表样式*/
+.tv-item>p{
+    margin-left:10px;
+    margin-bottom:10px;
+}
+.tv-item span{
+    display:block;
+    margin-left:100px;
+    margin-top:-15px;
+    font-size:14px;
+}
+.tv-item hr{
+    clear:both;
+}
+.item p a{
+    color:#00f;
+    text-decoration:none;
+}
+.item ul li{
+    list-style:none;
+}
+.item div{
+    float:left;
+}
+dl{
+    width:400px;
+    height:101px;
+    list-style:none;
+    border-bottom:1px dotted #000;
+    float:left;
+    margin-top:5px;
+}
+dl dt{
+    float:left;
+    padding-left:10px;
+}
+dl dd{
+    float:left;
+    margin:5px 30px;
+}
+.item dl dt a{
+    text-decoration:none;
+}
+.item dl dt a p{
+    color:#1540F0;
+}
+dl>dd>p{
+    margin-bottom:10px;
+    font-size:14px;
+}
+.img{
+    text-align:center;
+    float:left;
+    margin:10px;
+}
+
+/*电视剧推荐样式*/
+.tv-box{
+    width:1210px;
+    height:569px;
+}
+.tv-box>hr{
+    clear:both;
+}
+.tv-nav{
+    width:1210px;
+}
+.tv-list li{
+    float:left;
+}
+.tv-list{
+    margin-left:10px;
+    list-style:none;
+}
+.tv-list li:first-child a{
+    color:#1540F0;
+    font-size:20px;
+    text-decoration:none;
+    display:inline-block;
+}
+.tv-list li~li a{
+    font-size:16px;
+    color:#1540F0;
+    text-decoration:none;
+    display:inline-block;
+    margin-left: 30px;
+    margin-top:5px;
+}
+/*电视推荐左侧样式*/
+.tv-box-img{
+    width:900px;
+    height:518px;
+    float:left;
+    clear:both;
+}
+.tv-box-img hr{
+    margin-top:10px;
+}
+.tv .img p a{
+    text-decoration:none;
+    color:#00f;
+}
+.tv img{
+    width:160px;
+    height:200px;
+}
+/*电视剧推荐右侧样式*/
+.tv-rank{
+    width:300px;
+    height:518px;
+    float:left;
+    margin-top:-21px;
+}
+.tv-rank>a{
+    color:#1540F0;
+    display:inline-block;
+    float:right;
+    text-decoration:none;
+}
+.tv-rank>span{
+    margin-left:10px;
+    margin-bottom:10px;
+}
+.tv-rank hr{
+    width:300px;
+    margin-left:10px;
+    margin-top:10px;
+}
+.tv-rank>ul>li{
+    width:300px;
+    height:43px;
+    color:#00f;
+    margin:0 20px;
+}
+
+.tv-rank-list{
+    list-style:none;
+}
+.tv-rank-list li span:first-child{
+    display:inline-block;
+    width:20px;
+    height:20px;
+    background:#FF5200;
+    border:1px solid #1540F0;
+    border-radius:5px;
+    line-height:20px;
+    text-align:center;
+    color:#fff;
+    margin-right:20px;
+}
+.tv-rank-list a{
+    color:#1540F0;
+    text-decoration:none;
+}
+.tv-rank-list span:last-child{
+    display:inline-block;
+    float:right;
+    margin-right:20px;
+}
+.tv-rank-list li:nth-child(3)~li span:first-child{
+    background:#fff;
+    color:#1540F0;
+
+}
+/*电影推荐样式*/
+.film-box{
+    width:1210px;
+    height:569px;
+}
+.film-box>hr{
+    clear:both;
+}
+.film-nav{
+    width:1210px;
+}
+.film-list li{
+    float:left;
+}
+.film-list{
+    margin-left:10px;
+    list-style:none;
+    float:left;
+}
+.film-list li:first-child a{
+    color:#1540F0;
+    font-size:20px;
+    text-decoration:none;
+    display:inline-block;
+}
+.film-list li~li a{
+    font-size:16px;
+    color:#1540F0;
+    text-decoration:none;
+    display:inline-block;
+    margin-left: 30px;
+    margin-top:5px;
+}
+/*电影推荐左侧样式*/
+.film-box-img{
+    width:900px;
+    height:518px;
+    float:left;
+    clear:both;
+}
+.film-box-img hr{
+    margin-top:10px;
+}
+.film .img p a{
+    text-decoration:none;
+    color:#00f;
+}
+.film img{
+    width:160px;
+    height:200px;
+}
+/*电影推荐右侧样式*/
+.film-rank{
+    width:300px;
+    height:518px;
+    float:left;
+    margin-top:-21px;
+}
+.film-rank>a{
+    color:#1540F0;
+    display:inline-block;
+    float:right;
+    text-decoration:none;
+}
+.film-rank>span{
+    margin-left:10px;
+    margin-bottom:10px;
+}
+.film-rank hr{
+    width:300px;
+    margin-left:10px;
+    margin-top:10px;
+}
+.film-rank>ul>li{
+    width:300px;
+    height:43px;
+    color:#00f;
+    margin:0 20px;
+}
+.film-rank-list{
+    list-style:none;
+}
+.film-rank-list li span:first-child{
+    display:inline-block;
+    width:20px;
+    height:20px;
+    background:#FF5200;
+    border:1px solid #1540F0;
+    border-radius:5px;
+    line-height:20px;
+    text-align:center;
+    color:#fff;
+    margin-right:20px;
+}
+.film-rank-list a{
+    color:#1540F0;
+    text-decoration:none;
+}
+.film-rank-list span:last-child{
+    display:inline-block;
+    float:right;
+    margin-right:20px;
+}
+.film-rank-list li:nth-child(3)~li span:first-child{
+    background:#fff;
+    color:#1540F0;
+
+}
+
+/*动漫推荐样式*/
+.comic-box{
+    width:1210px;
+    height:569px;
+}
+.comic-box>hr{
+    clear:both;
+}
+.comic-nav{
+    width:1210px;
+}
+.comic-list li{
+    float:left;
+}
+.comic-list{
+    width:900px;
+    margin-left:10px;
+    list-style:none;
+    float:left;
+}
+.comic-list li:first-child a{
+    color:#1540F0;
+    font-size:20px;
+    text-decoration:none;
+    display:inline-block;
+}
+.comic-list li~li a{
+    font-size:16px;
+    color:#1540F0;
+    text-decoration:none;
+    display:inline-block;
+    margin-left: 30px;
+    margin-top:5px;
+}
+/*动漫推荐左侧样式*/
+.comic-box-img{
+    width:900px;
+    height:518px;
+    float:left;
+    clear:both;
+}
+.comic-box-img hr{
+    margin-top:10px;
+}
+.comic .img p a{
+    text-decoration:none;
+    color:#00f;
+}
+.comic img{
+    width:160px;
+    height:200px;
+}
+/*动漫推荐右侧样式*/
+.comic-rank{
+    width:300px;
+    height:518px;
+    float:left;
+    margin-top:-21px;
+}
+.comic-rank>a{
+    color:#1540F0;
+    display:inline-block;
+    float:right;
+    text-decoration:none;
+}
+.comic-rank>span{
+    margin-left:10px;
+    margin-bottom:10px;
+}
+.comic-rank hr{
+    width:300px;
+    margin-left:10px;
+    margin-top:10px;
+}
+.comic-rank>ul>li{
+    width:300px;
+    height:43px;
+    color:#00f;
+    margin:0 20px;
+}
+.comic-rank-list{
+    list-style:none;
+}
+.comic-rank-list li span:first-child{
+    display:inline-block;
+    width:20px;
+    height:20px;
+    background:#FF5200;
+    border:1px solid #1540F0;
+    border-radius:5px;
+    line-height:20px;
+    text-align:center;
+    color:#fff;
+    margin-right:20px;
+}
+.comic-rank-list a{
+    color:#1540F0;
+    text-decoration:none;
+}
+.comic-rank-list span:last-child{
+    display:inline-block;
+    float:right;
+    margin-right:20px;
+}
+.comic-rank-list li:nth-child(3)~li span:first-child{
+    background:#fff;
+    color:#1540F0;
+}
+
+/*综艺节目推荐样式*/
+.variety-box{
+    width:1210px;
+    height:569px;
+}
+.variety-box>hr{
+    clear:both;
+}
+.variety-nav{
+    width:1210px;
+}
+.variety-list li{
+    float:left;
+}
+.variety-list{
+    width:900px;
+    margin-left:10px;
+    list-style:none;
+    float:left;
+}
+.variety-list li:first-child a{
+    color:#1540F0;
+    font-size:20px;
+    text-decoration:none;
+    display:inline-block;
+}
+.variety-list li~li a{
+    font-size:16px;
+    color:#1540F0;
+    text-decoration:none;
+    display:inline-block;
+    margin-left: 30px;
+    margin-top:5px;
+}
+/*综艺节目推荐左侧样式*/
+.variety-box-img{
+    width:900px;
+    height:518px;
+    float:left;
+    clear:both;
+}
+.variety-box-img hr{
+    margin-top:10px;
+}
+.variety .img p a{
+    text-decoration:none;
+    color:#00f;
+}
+.variety img{
+    width:160px;
+    height:200px;
+}
+/*综艺节目推荐右侧样式*/
+.variety-rank{
+    width:300px;
+    height:518px;
+    float:left;
+    margin-top:-21px;
+}
+.variety-rank>a{
+    color:#1540F0;
+    display:inline-block;
+    float:right;
+    text-decoration:none;
+}
+.variety-rank>span{
+    margin-left:10px;
+    margin-bottom:10px;
+}
+.variety-rank hr{
+    width:300px;
+    margin-left:10px;
+    margin-top:10px;
+}
+.variety-rank>ul>li{
+    width:300px;
+    height:43px;
+    color:#00f;
+    margin:0 20px;
+}
+.variety-rank-list{
+    list-style:none;
+}
+.variety-rank-list li span:first-child{
+    display:inline-block;
+    width:20px;
+    height:20px;
+    background:#FF5200;
+    border:1px solid #1540F0;
+    border-radius:5px;
+    line-height:20px;
+    text-align:center;
+    color:#fff;
+    margin-right:20px;
+}
+.variety-rank-list a{
+    color:#1540F0;
+    text-decoration:none;
+}
+.variety-rank-list span:last-child{
+    display:inline-block;
+    float:right;
+    margin-right:20px;
+}
+.variety-rank-list li:nth-child(3)~li span:first-child{
+    background:#fff;
+    color:#1540F0;
+}
+.my-footer{
+    width:100%;
+}

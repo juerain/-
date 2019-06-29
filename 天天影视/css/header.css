@@ -3,7 +3,10 @@
     width:1200px;
     margin:0 auto;
 }
-#logo>span{
+#logo{
+    position:relative;
+}
+.logo{
     display:block;
     color:#00f;
     font-size:40px;
@@ -69,6 +72,18 @@
     width:98px;
     color:#0D519C;
     border:1px solid #2E8EDB;
+}
+.search_history{
+    width:92px;
+    height:50px;
+    top: 75px;
+    left: 1022px;
+    background:#ddd;
+    position:absolute;
+    border-radius: 5px;
+    font-size: 10px;
+    padding-top:10px;
+    padding-left: 8px;
 }
 .nav{
     width:1200px;
