@@ -64,26 +64,41 @@
 }
 #head .play_record{
     background: #ffffff;
-}
-#head .play_record>img,#head .play_record>span{
-    vertical-align: middle;
-}
-#head .search+a{
     width:98px;
     color:#0D519C;
     border:1px solid #2E8EDB;
 }
+#head .play_record>img,#head .play_record>span{
+    vertical-align: middle;
+}
+.list{
+    float: right;
+    margin-right: 70px;
+    margin-top: 8px;
+    
+}
+.pictxt{
+    z-index: 20;
+}
+.list .pictxt{
+    display: none;
+}
+.list:hover .pictxt{
+    display: block;
+}
 .search_history{
-    width:92px;
-    height:50px;
-    top: 75px;
+    width: 200px;
+    max-width: 200px;
+    min-height: 60px;;
+    top: 74px;
     left: 1022px;
-    background:#ddd;
+    background:#fff;
     position:absolute;
     border-radius: 5px;
     font-size: 10px;
     padding-top:10px;
     padding-left: 8px;
+    border: 1px solid #aaaaaa;
 }
 .nav{
     width:1200px;
