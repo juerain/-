@@ -92,7 +92,7 @@ a{
 }
 .tv-nav img{
     width: 120px;
-    margin: 5px 20px;
+    margin: 10px 20px;
 }
 .card{
     border: 0px !important;
@@ -101,7 +101,7 @@ a{
     width:400px;
     height:25px;
     background-image: linear-gradient(to bottom,#fff,#ddd);
-    margin:10px;
+    margin:15px;
     line-height: 0px;
 }
 .hot_film_next{
@@ -117,7 +117,48 @@ a{
     color: #666666;
     font-size: 14px;
   }
-
+/*底部分页样式*/
+.page-selection{
+    float:left;
+    width:1210px;
+    margin-bottom:10px;
+}
+.page-selection ul{
+    margin:50px 300px;;
+    list-style: none;
+}
+.page-selection ul li{
+    float: left;
+}
+.page-selection ul li a{
+    display:block;
+    height:31px;
+    font-size:14px;
+    border:1px solid #666666;
+    border-radius:5px;
+    text-align:center;
+    line-height:31px;
+    text-decoration:none;
+    margin:0 5px;
+    color:#000;
+}
+.page-selection ul li a:hover{
+    background: #1540f0;
+    color: white;
+}
+.page-selection ul li:nth-child(3) a{
+    background: #1540f0;
+    color: white;
+}
+.page-selection ul li .home-page,.page-selection ul li .end-page{
+    width:54px;
+}
+.page-selection ul li .prev,.page-selection ul li .next{
+    width:68px;
+}
+[class="a"]{
+    width:34px;
+}
 .my-footer{
     width:100%;
 }

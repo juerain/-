@@ -31,7 +31,7 @@
     float:left;
 }
 .carousel-item>ul li{
-    width: 530px;
+    width: 510px;
     height:50px;
     margin-left:40px;
     list-style:none;
@@ -80,7 +80,8 @@ h3{
     color:#666666;
     clear:both;
     margin-bottom:10px;
-    margin-left:8px
+    margin-left:8px;
+    font-size: 16px;
 }
 .hot-tv-img{
     text-align:center;
@@ -105,20 +106,37 @@ h3{
     color: #ffffff;
     line-height: 20px;
 }
-.hot-tv-img p a{
+.hot-tv-img p a,.img p a{
     text-decoration:none;
     color:#00f;
+    font-size: 14px;
+}
+.hot-tv-img p,.img p{
+    margin-top: 7px;
 }
 /*电视节目表样式*/
+.tv_hot,.tv_hot_img{
+    display: none;
+}
+.tv_hot:hover,.tv_hot_img{
+    display: block;
+}
+.tv_hot a{
+    display: block;
+}
 .tv-item>p{
     margin-left:10px;
     margin-bottom:10px;
+    font-size: 16px;
+    font-weight: bolder;
 }
 .tv-item span{
     display:block;
     margin-left:100px;
     margin-top:-15px;
     font-size:14px;
+    color: #054f07;
+    font-weight: normal;
 }
 .tv-item hr{
     clear:both;
@@ -175,6 +193,7 @@ dl>dd>p{
 }
 .tv-nav{
     width:1210px;
+    margin-top: 450px;
 }
 .tv-list li{
     float:left;
@@ -188,6 +207,7 @@ dl>dd>p{
     font-size:20px;
     text-decoration:none;
     display:inline-block;
+    font-weight: bolder;
 }
 .tv-list li~li a{
     font-size:16px;
@@ -220,22 +240,26 @@ dl>dd>p{
     width:300px;
     height:518px;
     float:left;
-    margin-top:-21px;
+    margin-top:-17px;
 }
 .tv-rank>a{
     color:#1540F0;
     display:inline-block;
     float:right;
     text-decoration:none;
+    font-size: 15px;
 }
 .tv-rank>span{
     margin-left:10px;
     margin-bottom:10px;
+    font-weight: bolder;
+    font-size: 16px;
 }
 .tv-rank hr{
     width:300px;
     margin-left:10px;
-    margin-top:10px;
+    margin-top:6px;
+    margin-bottom: 10px;
 }
 .tv-rank>ul>li{
     width:300px;
@@ -247,21 +271,26 @@ dl>dd>p{
 .tv-rank-list{
     list-style:none;
 }
-.tv-rank-list li span:first-child{
+.tv-rank-list li b:first-child{
     display:inline-block;
     width:20px;
     height:20px;
-    background:#FF5200;
     border:1px solid #1540F0;
     border-radius:5px;
     line-height:20px;
     text-align:center;
-    color:#fff;
     margin-right:20px;
+}
+.list_item{
+    background:#FF5200;
+    color:#fff;
 }
 .tv-rank-list a{
     color:#1540F0;
     text-decoration:none;
+}
+.tv-rank-list a span{
+    font-size: 15px;
 }
 .tv-rank-list span:last-child{
     display:inline-block;
@@ -297,6 +326,7 @@ dl>dd>p{
     font-size:20px;
     text-decoration:none;
     display:inline-block;
+    font-weight: bolder;
 }
 .film-list li~li a{
     font-size:16px;
@@ -329,7 +359,7 @@ dl>dd>p{
     width:300px;
     height:518px;
     float:left;
-    margin-top:-21px;
+    margin-top:-17px;
 }
 .film-rank>a{
     color:#1540F0;
@@ -340,11 +370,14 @@ dl>dd>p{
 .film-rank>span{
     margin-left:10px;
     margin-bottom:10px;
+    font-weight: bolder;
+    font-size: 16px;
 }
 .film-rank hr{
     width:300px;
     margin-left:10px;
-    margin-top:10px;
+    margin-top:6px;
+    margin-bottom: 10px;
 }
 .film-rank>ul>li{
     width:300px;
@@ -355,17 +388,24 @@ dl>dd>p{
 .film-rank-list{
     list-style:none;
 }
-.film-rank-list li span:first-child{
+.film-rank-list li b:first-child{
     display:inline-block;
     width:20px;
     height:20px;
-    background:#FF5200;
+    
     border:1px solid #1540F0;
     border-radius:5px;
     line-height:20px;
     text-align:center;
-    color:#fff;
+    
     margin-right:20px;
+}
+.list_item{
+    background:#FF5200;
+    color:#fff;
+}
+.film-rank-list a span{
+    font-size: 15px;
 }
 .film-rank-list a{
     color:#1540F0;
@@ -407,6 +447,7 @@ dl>dd>p{
     font-size:20px;
     text-decoration:none;
     display:inline-block;
+    font-weight: bolder;
 }
 .comic-list li~li a{
     font-size:16px;
@@ -425,6 +466,7 @@ dl>dd>p{
 }
 .comic-box-img hr{
     margin-top:10px;
+    
 }
 .comic .img p a{
     text-decoration:none;
@@ -439,7 +481,7 @@ dl>dd>p{
     width:300px;
     height:518px;
     float:left;
-    margin-top:-21px;
+    margin-top:-17px;
 }
 .comic-rank>a{
     color:#1540F0;
@@ -450,11 +492,14 @@ dl>dd>p{
 .comic-rank>span{
     margin-left:10px;
     margin-bottom:10px;
+    font-weight: bolder;
+    font-size: 16px;
 }
 .comic-rank hr{
     width:300px;
     margin-left:10px;
-    margin-top:10px;
+    margin-top:6px;
+    margin-bottom: 10px;
 }
 .comic-rank>ul>li{
     width:300px;
@@ -465,17 +510,22 @@ dl>dd>p{
 .comic-rank-list{
     list-style:none;
 }
-.comic-rank-list li span:first-child{
+.comic-rank-list li b:first-child{
     display:inline-block;
     width:20px;
     height:20px;
-    background:#FF5200;
     border:1px solid #1540F0;
     border-radius:5px;
     line-height:20px;
     text-align:center;
-    color:#fff;
     margin-right:20px;
+}
+.comic-rank-list span{
+    font-size: 15px;
+}
+.list_item{
+    background:#FF5200;
+    color:#fff;
 }
 .comic-rank-list a{
     color:#1540F0;
@@ -516,6 +566,7 @@ dl>dd>p{
     font-size:20px;
     text-decoration:none;
     display:inline-block;
+    font-weight: bolder;
 }
 .variety-list li~li a{
     font-size:16px;
@@ -548,7 +599,7 @@ dl>dd>p{
     width:300px;
     height:518px;
     float:left;
-    margin-top:-21px;
+    margin-top:-17px;
 }
 .variety-rank>a{
     color:#1540F0;
@@ -559,32 +610,43 @@ dl>dd>p{
 .variety-rank>span{
     margin-left:10px;
     margin-bottom:10px;
+    font-size: 16px;
+    font-weight: bolder;
 }
 .variety-rank hr{
     width:300px;
     margin-left:10px;
-    margin-top:10px;
+    margin-top:6px;
+    margin-bottom: 10px;
 }
 .variety-rank>ul>li{
     width:300px;
     height:43px;
     color:#00f;
     margin:0 20px;
+
 }
 .variety-rank-list{
     list-style:none;
 }
-.variety-rank-list li span:first-child{
+.variety-rank-list span{
+    font-size: 15px;
+}
+.variety-rank-list li b:first-child{
     display:inline-block;
     width:20px;
     height:20px;
-    background:#FF5200;
+    
     border:1px solid #1540F0;
     border-radius:5px;
     line-height:20px;
     text-align:center;
-    color:#fff;
+    
     margin-right:20px;
+}
+.list_item{
+    background:#FF5200;
+    color:#fff;
 }
 .variety-rank-list a{
     color:#1540F0;
