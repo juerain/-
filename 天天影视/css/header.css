@@ -3,17 +3,6 @@
     width:1200px;
     margin:0 auto;
 }
-#logo{
-    position:relative;
-}
-.logo{
-    display:block;
-    color:#00f;
-    font-size:40px;
-    margin-top:10px;
-    float:left;
-    margin:15px 3px;
-}
 #head ul{
     list-style:none;
     margin-top:10px;
@@ -43,7 +32,7 @@
     vertical-align: middle;
 }
 #head input{
-    margin:10px 0 0 350px;
+    margin:40px 0 0 83px;
     width:400px;height:30px;
     border:1px solid #04AFF5;
     border-radius:5px;
@@ -59,9 +48,11 @@
     line-height:32px;
     text-decoration:none;
     border-radius:5px;
-    margin:0 10px;
     font-size:14px;
+    float: right;
+    margin-bottom: 10px;
 }
+
 #head .play_record{
     background: #ffffff;
     width:98px;
@@ -71,14 +62,16 @@
 #head .play_record>img,#head .play_record>span{
     vertical-align: middle;
 }
+
 .list{
     float: right;
     margin-right: 70px;
     margin-top: 8px;
-    
 }
 .pictxt{
     z-index: 20;
+    display: relative;
+    
 }
 .list .pictxt{
     display: none;
@@ -87,13 +80,14 @@
     display: block;
 }
 .search_history{
+    z-index: 100;
     width: 200px;
     max-width: 200px;
     min-height: 60px;;
-    top: 74px;
-    left: 1022px;
+    top: 0px;
+    left: 10px;
     background:#fff;
-    position:absolute;
+    position:relative;
     border-radius: 5px;
     font-size: 10px;
     padding-top:10px;

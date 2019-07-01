@@ -76,6 +76,57 @@
     padding: 8px 0;
 }
 /*热播影视样式*/
+.hot_tv .hot-tv-img1 {
+	position: relative;
+	float: left;
+	overflow: hidden;
+
+}
+.hot-tv-img1 b{
+    font-size: 24px;
+    
+    font-weight: bolder;
+}
+.hot-tv-img1 b a{
+    color:white;
+}
+.hot-tv-img1 figcaption::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: -webkit-linear-gradient(top, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
+	background: linear-gradient(to bottom, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
+	content: '';
+	opacity: 0;
+	-webkit-transform: translate3d(0,50%,0);
+	transform: translate3d(0,50%,0);
+}
+.hot-tv-img1 figcaption::before,
+.hot-tv-img1 b {
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+.hot-tv-img1 b {
+	position: absolute;
+	bottom: -20px;
+	left: -20px;
+	padding: 4em;
+	width: 100%;
+	opacity: 0;
+	-webkit-transform: translate3d(0,10px,0);
+	transform: translate3d(0,10px,0);
+}
+.hot-tv-img1:hover figcaption::before ,
+.hot-tv-img1:hover b {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+
+
 h3{
     color:#666666;
     clear:both;
@@ -115,6 +166,34 @@ h3{
     margin-top: 7px;
 }
 /*电视节目表样式*/
+.tv .img,.film .img,.comic .img,.variety .img {
+	position: relative;
+	float: left;
+	overflow: hidden;
+}
+.img figcaption::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 180%;
+	height: 100%;
+	background: rgba(255,255,255,0.7);
+	content: '';
+	transition: transform 0.6s;
+	transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+}
+.img:hover figcaption::before {
+	transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+}
+
+
+
+
+
+
+
+
+
 .tv_hot,.tv_hot_img{
     display: none;
 }
