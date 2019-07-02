@@ -76,6 +76,7 @@
     padding: 8px 0;
 }
 /*热播影视样式*/
+/* 鼠标悬停时，图片出现加入收藏的效果 */
 .hot_tv .hot-tv-img1 {
 	position: relative;
 	float: left;
@@ -143,6 +144,7 @@ h3{
     width:180px;
     height:250px;
 }
+/* 更新集数的样式 */
 .hot-tv-img a,.tv a,.film a,.comic a,.variety a{
     position:relative;
 }
@@ -157,6 +159,7 @@ h3{
     color: #ffffff;
     line-height: 20px;
 }
+
 .hot-tv-img p a,.img p a{
     text-decoration:none;
     color:#00f;
@@ -166,6 +169,7 @@ h3{
     margin-top: 7px;
 }
 /*电视节目表样式*/
+/* 鼠标悬停时，图片有闪光的效果 */
 .tv .img,.film .img,.comic .img,.variety .img {
 	position: relative;
 	float: left;
