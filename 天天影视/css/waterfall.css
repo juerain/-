@@ -55,7 +55,7 @@ h1,h2,h3,h4,h5,h6,dl,dd,dt,ul,li,p{
 	height:33px;
 	line-height:33px;
 }
-/***登陆注册**********************************/
+/***鐧婚檰娉ㄥ唽**********************************/
 #register>a,#load>a{
 	color: #FA170A !important;
 	padding-top: 1px;
@@ -164,7 +164,7 @@ h1,h2,h3,h4,h5,h6,dl,dd,dt,ul,li,p{
 #loadph>a>b{
 	background: url("../images/load/loadwb.png") 0 -120px no-repeat;
 }
-/***播放记录***********************************/
+/***鎾斁璁板綍***********************************/
 #search>li.btn_record{
 	position: relative;
 }

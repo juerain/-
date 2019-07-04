@@ -1,0 +1,107 @@
+/*清除所有元素的内外边距*/
+*{margin:0;padding:0;}
+/*设置头部宽度，高度*/
+.my-header{
+    width:100%;
+    height:165px;
+}
+/*设置最外层div的宽度，内容水平居中*/
+.box{
+    width:1210px;
+    margin:0 auto;
+}
+.box ul{
+    list-style:none;
+    margin-top:10px;
+}
+.box header ul li,.details li{
+    float:left;
+    margin-right:5px;
+}
+.box p{
+    clear:both;
+    margin:10px 10px;
+    font-size:17px;
+    color:#666;
+}
+/*一楼热播影视样式*/
+.hot-tv-img{
+    width:1210px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+}
+.hot-tv-img div{
+    margin:10px;
+    text-align:center;
+}
+.hot-tv-img div:first-child,.hot-tv-img div:nth-child(2),.hot-tv-img div:nth-child(3),.hot-tv-img div:nth-child(4)
+,.hot-tv-img div:nth-child(5),.hot-tv-img div:nth-child(6),.hot-tv-img div:nth-child(7),.hot-tv-img div:nth-child(8),.hot-tv-img div:nth-child(9),.hot-tv-img div:nth-child(10),.hot-tv-img div:nth-child(11),.hot-tv-img div:nth-child(12){
+    width:180px;height:292px;
+}
+.hot-tv-img img{
+    width:180px;height:252px;
+}
+.hot-tv-img p a{
+    color:#1540F0;
+    font-size:14px;
+    text-decoration:none;
+}
+/*二楼左侧样式*/
+.details-box{
+    width:800px;
+    float:left;
+}
+.details{
+    float:right;
+}
+.details li a{
+    text-decoration:none;
+}
+.details-box h2{
+    float:left;
+}
+.details-box hr{
+    clear:both;
+    margin-bottom:10px;
+    margin-top:41px;
+}
+.details-right ul{
+    clear:both !important;
+}
+.details-right{
+    width:510px;
+    float:right;
+}
+.details-right img{
+    display:inline-block;
+float:right;
+}
+.details-right ul li{
+    margin:20px 0;
+}
+/*二楼右侧样式*/
+.tv-nav{
+    width:400px;
+    height:600px;
+    float:left;
+    margin-left:5px;
+}
+.tv-nav hr{
+    margin-top:-1px;
+}
+.tv-nav h4{
+    width:370px;
+    height:25px;
+    background-image:linear-gradient(to bottom,#fff,#ddd);
+    line-height:25px;
+    padding-left:30px;
+    margin-bottom:15px;
+}
+.tv-nav h4 a{
+    text-decoration:none;
+}
+
+.my-footer{
+    width:100%;
+}
