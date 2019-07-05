@@ -17,14 +17,38 @@
 			</p>
 			
 			<ul class="reg-list">
-				<li><a href="">请登录</a></li>
+				<li><a href="">请登录
+					<div class="load" style="display: block;">
+						<div class="loadmain">
+							<span class="close">×</span>
+							<h1>用户登录</h1>
+							<input type="text" placeholder="用户名/手机号">
+							<input type="password" placeholder="密码">
+							<div class="btn">
+								<button type="button">登录</button>
+								<p><a href="">没有账号去注册</a></p>
+							</div>
+							<div class="loadtype">
+								<span>登录方式</span>
+								<hr>
+								<ul>
+									<li id="loadwx"><a href=""><b></b></a></li>
+									<li id="loadwb"><a href=""><b></b></a></li>
+									<li id="loadqq"><a href=""><b></b></a></li>
+									<li id="loadph"><a href=""><b></b></a></li>
+								</ul>
+							</div>
+						</div>
+						
+					</div>
+				</a></li>
 				<li><a href="">注册</a></li>
 				<li><img src="../img/tog_01.jpg" alt=""><a href="">放入桌面</a></li>
 				<li><img src="../img/tog_02.jpg" alt=""><a href="">加入收藏</a></li>
 				<li><img src="../img/tog_03.jpg" alt=""><a href="">留言/求片</a></li>
 				<li><img src="../img/tog_04.jpg" alt=""><a href="">关注微博</a></li>
 			</ul>
-			<input type="text" placeholder="请输入影片名或演员名">
+			<input class="search_input" type="text" placeholder="请输入影片名或演员名">
 			<a href="#" class="search">搜索</a>
 			<a href="#" class="play_record"><img src="../img/record.jpg" alt=""><span>播放记录</span></a>	
 		</div>
@@ -64,5 +88,7 @@
 			</ul>
 		</div>
 	</header>
+	<script src="../js/index.js"></script>
+	<script src="../js/jquery-1.js"></script>
 </body>
 </html>

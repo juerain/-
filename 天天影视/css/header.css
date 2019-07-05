@@ -31,7 +31,7 @@
 .reg-list li img,.reg-list li a{
     vertical-align: middle;
 }
-#head input{
+#head .search_input{
     margin:40px 0 0 83px;
     width:400px;height:30px;
     border:1px solid #04AFF5;
@@ -137,4 +137,86 @@
 .family>ul>li:nth-child(11) a{
     margin-left:100px;
     color:#1540F0;
+}
+
+
+div.load{
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+}
+div.load>div.loadmain{
+    width: 400px;
+    min-height: 330px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -165px;
+    margin-left: -200px;
+    background: white;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px;
+    
+}
+.reg-list li a{
+    text-decoration: none !important;
+}
+div.load>div.loadmain .close{
+    color: #ccc;
+    font-size: 30px;
+    position: absolute;
+    top: -5px;
+    right: 3px;
+}
+div.load>div.loadmain h1{
+    text-align: center;
+    margin:20px;
+}
+div.load>div.loadmain span,div.load>div.loadmain h1{
+    color: #666666;
+}
+div.load>div.loadmain input{
+    width: 340px !important;
+    height: 35px !important;
+    margin:10px 0;
+    line-height: 35px;
+    padding-left: 20px;
+    font-size: 20px;
+    
+}
+div.btn{
+    text-align: center;
+}
+div.btn button{
+    width: 250px;
+    height: 30px;
+    
+}
+div.btn p{
+    float: right;
+    
+}
+div.btn p a{
+    color:#551a8b !important;
+    font-size: 14px;
+}
+.loadtype span{
+    display: inline-block;
+    float: left !important;
+    border-bottom: 1px;
+    margin-left: 10px;
+    margin-top: 25px;
+}
+.loadtype hr{
+    clear: both;
+}
+#loadwx a b{
+    display: block;
+    position: relative;
+    background: url(../img/loadwx.png) 0 -80px no-repeat;
 }
