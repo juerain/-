@@ -1,4 +1,4 @@
-html,body{margin:0;padding:0;}
+/* html,body{margin:0;padding:0;}
 body{
   display:-webkit-flex;
   display:-ms-flexbox;
@@ -9,8 +9,8 @@ body{
   -webkit-justify-content:center;
       -ms-flex-pack:center;
           justify-content:center;
-  /* background-color:#684da3; */
-}
+  background-color:#684da3;
+} */
 p{color:#fff;font-size:20px;font-weight:bold;font-family:"微软雅黑";}
 
 p span {
@@ -49,18 +49,18 @@ p span::after {
   -webkit-transform:rotateY(-40deg);
           transform:rotateY(-40deg);
 }
-p span:hover::before {
+/* p span:hover::before {
   -webkit-transform:scale(1.1, 1) skew(0deg, 5deg);
       -ms-transform:scale(1.1, 1) skew(0deg, 5deg);
           transform:scale(1.1, 1) skew(0deg, 5deg);
-}
+} */
 p span:hover::after {
   -webkit-transform:rotateY(-10deg);
           transform:rotateY(-10deg);
 }
-p span + span {
+/* p span + span {
   margin-left:0.1em;
-}
+} */
 @media (min-width:20em) {
   p {
     font-size:2em;

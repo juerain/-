@@ -3,9 +3,47 @@
     width:1200px;
     margin:0 auto;
 }
+#head #logo .day_film{
+    width:300px;
+    height: 52px;
+    margin-top: 15px;
+    display: inline-block;
+    float: left;
+}
+#head #logo .header_right{
+    width: 800px;
+    float: left;
+}
+#head #logo .header_right .up{
+    width: 900px;
+    height: 35px;
+}
+.down{
+    width: 900px !important;
+    height: 40px;
+    display: inline-block;
+}
+
+/* 登录按钮的样�? */
+button.btn-danger {
+    color: red;
+    background-color: white !important;
+    border: none;
+    padding: 0px;
+    font-size: 14px;
+}
+button.btn-danger:hover{
+    text-decoration: underline;
+    color: red;
+}
+.modal-dialog{
+    margin: 0px;
+}
+
 #head ul{
     list-style:none;
-    margin-top:10px;
+    margin-top:5px;
+    margin-bottom: 0px;
 }
 #head .reg-list{
     float:right;
@@ -32,8 +70,9 @@
     vertical-align: middle;
 }
 #head .search_input{
-    margin:40px 0 0 83px;
-    width:400px;height:30px;
+    margin:10px 0 0 55px;
+    width:400px;
+    height:30px;
     border:1px solid #04AFF5;
     border-radius:5px;
     padding:0px 20px;
@@ -49,8 +88,11 @@
     text-decoration:none;
     border-radius:5px;
     font-size:14px;
-    float: right;
-    margin-bottom: 10px;
+    /* float: right; */
+
+}
+.search{
+    margin: 0px 10px;
 }
 
 #head .play_record{
@@ -63,12 +105,12 @@
     vertical-align: middle;
 }
 
-.list{
+/* .list{
     float: right;
     margin-right: 70px;
     margin-top: 8px;
-}
-.pictxt{
+} */
+/* .pictxt{
     z-index: 20;
     display: relative;
     
@@ -78,7 +120,7 @@
 }
 .list:hover .pictxt{
     display: block;
-}
+} */
 .search_history{
     z-index: 100;
     width: 200px;
@@ -105,7 +147,7 @@
     float:left;
     font-size:18px;
 }
-.nav ul li a{
+.nav .nav_bar li a{
     display: inline-block;
     margin: 0px 10px;
     padding: 0px 10px;
@@ -140,7 +182,7 @@
 }
 
 
-div.load{
+/* div.load{
     background: rgba(0, 0, 0, 0.8);
     position: fixed;
     top: 0;
@@ -219,4 +261,4 @@ div.btn p a{
     display: block;
     position: relative;
     background: url(../img/loadwx.png) 0 -80px no-repeat;
-}
+} */
