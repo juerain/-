@@ -4,6 +4,10 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" href="../css/details.css"/>
+	<link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
 </head>
 <body>
 	<div class="box">
@@ -13,52 +17,53 @@
 		<section>
 		  <div class="hot-tv-img">
 		  	<div class="img">
-					<a href=""><img src="../img/tv01.jpg" alt=""></a>
-					<p><a href="">倚天屠龙记</a></p></div>
+					<a href=""><img src="../img/tv01.jpg" alt=""><span>更新至25集</span></a>
+					<p><a href="">倚天屠龙记</a></p><figcaption></figcaption></div>
 			  <div class="img">
-					<a href=""><img src="../img/film01.jpg" alt=""></a>
-					<p><a href="">飞驰人生</a></p></div>
+					<a href=""><img src="../img/film01.jpg" alt=""><span>更新至25集</span></a>
+					<p><a href="">飞驰人生</a></p><figcaption></figcaption></div>
 			  <div class="img">
-					<a href=""><img src="../img/tv02.jpg" alt=""></a>
-					<p><a href="">都挺好</a></p></div>
+					<a href=""><img src="../img/tv02.jpg" alt=""><span>更新至25集</span></a>
+					<p><a href="">都挺好</a></p><figcaption></figcaption></div>
 			  <div class="img">
-					<a href=""><img src="../img/film02.jpg" alt=""></a>
-					<p><a href="">疯狂的外星人</a></p></div>
+					<a href=""><img src="../img/film02.jpg" alt=""><span>更新至25集</span></a>
+					<p><a href="">疯狂的外星人</a></p><figcaption></figcaption></div>
 			  <div class="img">
-					<a href=""><img src="../img/film03.jpg" alt=""></a>
-					<p><a href="">惊奇队长</a></p></div>
+					<a href=""><img src="../img/film03.jpg" alt=""><span>更新至25集</span></a>
+					<p><a href="">惊奇队长</a></p><figcaption></figcaption></div>
 			  <div class="img">
-					<a href=""><img src="../img/tv03.jpg" alt=""></a>
-					<p><a href="">新白娘子传奇</a></p></div>
+					<a href=""><img src="../img/tv03.jpg" alt=""><span>更新至25集</span></a>
+					<p><a href="">新白娘子传奇</a></p><figcaption></figcaption></div>
 				<div class="img">
-					<a href=""><img src="../img/film04.jpg" alt=""></a>
-					<p><a href="">四大名捕之食人梦界</a></p></div>
+					<a href=""><img src="../img/film04.jpg" alt=""><span>更新至25集</span></a>
+					<p><a href="">四大名捕之食人梦界</a></p><figcaption></figcaption></div>
 			  <div class="img">
-					<a href=""><img src="../img/film05.jpg" alt=""></a>
-					<p><a href="">兴风作浪</a></p></div>
+					<a href=""><img src="../img/film05.jpg" alt=""><span>更新至25集</span></a>
+					<p><a href="">兴风作浪</a></p><figcaption></figcaption></div>
 			  <div class="img">
-					<a href=""><img src="../img/tv04.jpg" alt=""></a>
-					<p><a href="">青春斗</a></p></div>
+					<a href=""><img src="../img/tv04.jpg" alt=""><span>更新至25集</span></a>
+					<p><a href="">青春斗</a></p><figcaption></figcaption></div>
 			  <div class="img">
-					<a href=""><img src="../img/film06.jpg" alt=""></a>
-					<p><a href="">白蛇缘起</a></p></div>
+					<a href=""><img src="../img/film06.jpg" alt=""><span>更新至25集</span></a>
+					<p><a href="">白蛇缘起</a></p><figcaption></figcaption></div>
 			  <div class="img">
-					<a href=""><img src="../img/tv05.jpg" alt=""></a>
-					<p><a href="">东宫</a></p></div>
+					<a href=""><img src="../img/tv05.jpg" alt=""><span>更新至25集</span></a>
+					<p><a href="">东宫</a></p><figcaption></figcaption></div>
 			  <div class="img">
-					<a href=""><img src="../img/film07.jpg" alt=""></a>
-					<p><a href="">蓝色生死恋</a></p></div>
+					<a href=""><img src="../img/film07.jpg" alt=""><span>更新至25集</span></a>
+					<p><a href="">蓝色生死恋</a></p><figcaption></figcaption></div>
 		  </div>
-			<div class="details-box">
+			<div id="details" class="details-box">
 			  <h2>孤芳不自赏<span>(2017)</span></h2>
 			<ul class="details">
-			  <li><a href="">概述</li></a>
-			  <li><a href="">剧情</li></a>
-			  <li><a href="">演员表</li></a>
-			  <li><a href="">评论</li></a>
+			  <li><a href="">概述</a></li>
+			  <li><a href="">剧情</a></li>
+			  <li><a href="">演员表</a></li>
+			  <li><a href="">评论</a></li>
 			</ul>
 			<hr>
-			<a href=""><img src="../img/tv02.jpg" alt=""></a>
+			<div class="summary">
+				<a href=""><img src="../img/tv02.jpg" alt=""></a>
 			<div class="details-right">
 			  <ul>
 				  <li><span>导演： 梁胜权</span></li>
@@ -73,22 +78,148 @@
 			<hr>
 			<p>耽美小说第一人风弄的小说《孤芳不自赏》也被爆列入影视计划——剧本由有志于打造“内地剧本梦工厂”的派乐传媒承接，而派乐传媒的创始人正是业内影视金牌编剧张永琛。晋、燕、凉、秦四国征战不休，晋国国力最强，晋国国王亲弟镇北王楚北捷（钟汉良饰）英勇善战、武功谋略过人，令其他三国闻风丧胆。晋燕交战之际，燕国敬安王府遭到沦陷，一夜之间王府覆灭。侍女白娉婷（杨颖饰）与小王爷何侠（孙艺洲饰）在逃亡时离散流落。在一寺庙里，楚北捷偶遇白聘婷，被她的琴声所倾倒，进而钟情相恋。但因为不同的阵营处境注定了两人此生情路坎坷，爱情虽浓却障碍重重，既有晋国国王的疑心，又有小敬安王何侠的各种挑拨，还要面对四国纷争不断的乱世天下。在种种困难前，楚北捷不改初心，情场上付深情，默默守护；战场上出奇兵，与白娉婷联手击败何侠，成功阻止了一场生灵涂炭的战争，共同守护了天下安宁</p>
 			</div>
+			</div>
 			<div class="tv-nav">
 			  <p>热门影视</p>
 				<hr>
-				<h4><a href="">孤战</a></h4>
-				<h4><a href="">乱世丽人行</a></h4>
-				<h4><a href="">守护丽人</a></h4>
-				<h4><a href="">最后一张签证</a></h4>
-				<h4><a href="">遇见爱情的利先生</a></h4>
-				<h4><a href="">一年级毕业季</a></h4>
-				<h4><a href="">孤芳不自赏</a></h4>
-				<h4><a href="">最强大脑第四季</a></h4>
-				<h4><a href="">鬼怪</a></h4>
-				<h4><a href="">漂亮的李慧珍</a></h4>
+				<div id="parent">
+					<div class="card">
+							<div class="card-header">
+									<a class="card-link" data-toggle="collapse" href="#a1"><h4>倚天屠龙记</h4></a>
+							</div>
+							<div data-parent="#parent" id="a1" class="collapse">
+									<div class="card-body p-0"><a href=""><img src="../img/tv01.jpg" alt=""/></a>
+										<ul class="hot_film_next">
+											<li><b>主演：</b><span>曾舜晞 陈钰琪 祝绪丹</span></li>
+											<li><b>类型：</b><span>国产剧</span></li>
+											<li><b>上映：</b><span>2019</span></li>
+											<li><b>状态：</b><span>更新至10集</span></li>
+										</ul>
+									</div>
+							</div>
+							<div class="card-header">
+								<a class="card-link" data-toggle="collapse" href="#a2"><h4>都挺好</h4></a>
+							</div>
+							<div data-parent="#parent" id="a2" class="collapse">
+								<div class="card-body p-0"><a href=""><img src="../img/tv02.jpg" alt=""/></a>
+									<ul class="hot_film_next">
+										<li><b>主演：</b><span>姚晨 倪大红 郭京飞</span></li>
+										<li><b>类型：</b><span>国产剧</span></li>
+										<li><b>上映：</b><span>2019</span></li>
+										<li><b>状态：</b><span>更新至16集</span></li>
+									</ul>
+								</div>
+							</div>
+							<div class="card-header">
+								<a class="card-link" data-toggle="collapse" href="#a3"><h4>新白娘子传奇</h4></a>
+							</div>
+							<div data-parent="#parent" id="a3" class="collapse">
+								<div class="card-body p-0"><a href=""><img src="../img/tv03.jpg" alt=""/></a>
+									<ul class="hot_film_next">
+										<li><b>主演：</b><span>于朦胧 鞠婧祎 裴子添</span></li>
+										<li><b>类型：</b><span>国产剧</span></li>
+										<li><b>上映：</b><span>2019</span></li>
+										<li><b>状态：</b><span>更新至20集</span></li>
+									</ul>
+								</div>
+							</div>
+							<div class="card-header">
+								<a class="card-link" data-toggle="collapse" href="#a4"><h4>青春斗</h4></a>
+							</div>
+							<div data-parent="#parent" id="a4" class="collapse">
+								<div class="card-body p-0"><a href=""><img src="../img/tv04.jpg" alt=""/></a>
+									<ul class="hot_film_next">
+										<li><b>主演：</b><span>郑爽 盖玥希 陈小纭</span></li>
+										<li><b>类型：</b><span>国产剧</span></li>
+										<li><b>上映：</b><span>2019</span></li>
+										<li><b>状态：</b><span>更新至18集</span></li>
+									</ul>
+								</div>
+							</div>
+							<div class="card-header">
+								<a class="card-link" data-toggle="collapse" href="#a5"><h4>东宫</h4></a>
+							</div>
+							<div data-parent="#parent" id="a5" class="collapse">
+								<div class="card-body p-0"><a href=""><img src="../img/tv05.jpg" alt=""/></a>
+									<ul class="hot_film_next">
+										<li><b>主演：</b><span>彭小苒 陈星旭 王志飞</span></li>
+										<li><b>类型：</b><span>国产剧</span></li>
+										<li><b>上映：</b><span>2019</span></li>
+										<li><b>状态：</b><span>更新至8集</span></li>
+									</ul>
+								</div>
+							</div>
+							<div class="card-header">
+								<a class="card-link" data-toggle="collapse" href="#a6"><h4>只为遇见你</h4></a>
+							</div>
+							<div data-parent="#parent" id="a6" class="collapse">
+								<div class="card-body p-0"><a href=""><img src="../img/tv06.jpg" alt=""/></a>
+									<ul class="hot_film_next">
+										<li><b>主演：</b><span>张铭恩 文咏珊 魏千翔</span></li>
+										<li><b>类型：</b><span>国产剧</span></li>
+										<li><b>上映：</b><span>2019</span></li>
+										<li><b>状态：</b><span>更新至10集</span></li>
+									</ul>
+								</div>
+							</div>
+							<div class="card-header">
+								<a class="card-link" data-toggle="collapse" href="#a7"><h4>爱上北斗星男友</h4></a>
+							</div>
+							<div data-parent="#parent" id="a7" class="collapse">
+								<div class="card-body p-0"><a href=""><img src="../img/tv07.jpg" alt=""/></a>
+									<ul class="hot_film_next">
+										<li><b>主演：</b><span>徐璐 张铭恩 任言恺</span></li>
+										<li><b>类型：</b><span>国产剧</span></li>
+										<li><b>上映：</b><span>2019</span></li>
+										<li><b>状态：</b><span>更新至22集</span></li>
+									</ul>
+								</div>
+							</div>
+							<div class="card-header">
+								<a class="card-link" data-toggle="collapse" href="#a8"><h4>疯狂的外星人</h4></a>
+							</div>
+							<div data-parent="#parent" id="a8" class="collapse">
+								<div class="card-body p-0"><a href=""><img src="../img/film02.jpg" alt=""/></a>
+									<ul class="hot_film_next">
+										<li><b>主演：</b><span>黄渤 沈腾 雷佳音 </span></li>
+										<li><b>类型：</b><span>国产剧</span></li>
+										<li><b>上映：</b><span>2018</span></li>
+										<li><b>状态：</b><span>更新至06集</span></li>
+									</ul>
+								</div>
+							</div>
+							<div class="card-header">
+								<a class="card-link" data-toggle="collapse" href="#a9"><h4>飞驰人生</h4></a>
+							</div>
+							<div data-parent="#parent" id="a9" class="collapse">
+								<div class="card-body p-0"><a href=""><img src="../img/film01.jpg" alt=""/></a>
+									<ul class="hot_film_next">
+										<li><b>主演：</b><span>沈腾 黄景瑜 尹正</span></li>
+										<li><b>类型：</b><span>国产剧</span></li>
+										<li><b>上映：</b><span>2019</span></li>
+										<li><b>状态：</b><span>更新至10集</span></li>
+									</ul>
+								</div>
+							</div>
+							<div class="card-header">
+								<a class="card-link" data-toggle="collapse" href="#a10"><h4>四大名捕之食人梦界</h4></a>
+							</div>
+							<div data-parent="#parent" id="a10" class="collapse">
+								<div class="card-body p-0"><a href=""><img src="../img/film04.jpg" alt=""/></a>
+									<ul class="hot_film_next">
+										<li><b>主演：</b><span>陈子由 刘林城</span></li>
+										<li><b>类型：</b><span>国产剧</span></li>
+										<li><b>上映：</b><span>2019</span></li>
+										<li><b>状态：</b><span>更新至10集</span></li>
+									</ul>
+								</div>
+							</div>
+					</div>
+				</div>
 			</div>
 		</section>
 	</div>
 	<iframe class="my-footer" src="footer.html" frameborder="0" scrolling="no"></iframe>
+	
 </body>
 </html>
