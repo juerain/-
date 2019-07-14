@@ -1,0 +1,157 @@
+*{
+    margin:0;
+      padding:0;
+  }
+  
+  #logo{
+    width:1210px;
+      height:74px;
+      margin:0 auto;
+  }
+  #logo span{
+    display:block;
+      font-size:40px;
+      margin-top:10px;
+      float:left;
+    margin:15px 3px;
+  }
+section{
+    width:100%;
+  }
+  #reg{
+      width:1210px;
+      height:510px;
+      background-image:url("../img/reg.jpg");
+      margin:0 auto;
+  }
+  #reg-page{
+    width:800px;
+      height:500px;
+      background:rgba(200,200,200,0.8);
+      margin:0 auto;
+      margin-top:5px;
+      /* text-align:center; */
+      /* position:relative; */
+      border-radius: 10px;
+      border:1px solid #333333;
+  }
+  h1{
+      font-size: 30px;	
+  }
+  label {
+    display:inline-block;
+      float:left;
+      margin-left:60px;
+  }
+  #reg-page div{
+      margin:20px;
+      width:738px;
+      height: 20px;
+      margin-top:30px;
+      margin-left: 40px;
+      line-height: 35px;
+      clear: both;
+      position: relative;
+  }
+  #reg-page div span{
+      margin-left: 10px;
+    }
+div>input+span{
+    color: red;
+}
+.vali_info{
+    display: none;
+}
+  #reg-page div.centerAll:first-child{
+      margin: 0px;
+  }
+  .centerAll{
+      width: 738px;
+      text-align: center;
+      margin-left: 0px !important;
+  }
+  [type="text"],[type="password"]{
+    width:250px;
+      height:30px;
+      float:left;
+  }
+  
+  #checkbox{
+    clear:both;
+      padding-top: 20px;
+      
+  }
+  #checkbox span{
+      font-size: 14px;
+      color: #666666;
+  }
+  
+  button{
+    width:200px;
+      height:40px;
+      color:#fff;
+      background:#04cc00;
+      font-size:20px;
+      font-weight:bold;
+      border-radius:10px;
+      border:0;
+  }
+  a{
+    text-decoration:none;
+      position: relative;
+      bottom:-20px;
+      left:710px;
+  }
+  .vali_success,.vali_fail,.vali_rfail{
+	background-repeat:no-repeat;
+  background-position:left center;
+	
+}
+/* 验证消息：验证通过时的样式 */
+.vali_success{
+    background-image:url("../img/ok.png");
+	padding-left:20px;
+	width:0px;height:20px;
+    overflow:hidden;
+    position: absolute;
+    top: 7px;
+    left: 413px;
+    
+}
+/* 验证消息：验证失败时的样式 */
+.vali_fail{
+    background-image:url("../img/err.png");
+    color:Red;
+    padding-left:30px;
+}
+.vali_rfail{
+    background-image:url("../img/err.png");
+    color:Red;
+    padding-left:30px;
+}
+
+  /* 底部样式 */
+  #footer-box{
+    width:1210px;
+      margin:0 auto;
+      text-align:center;
+  }
+
+  #footer>li{
+    list-style:none;
+      display:inline-block;
+      border-right:1px solid #000;
+      margin-left:8px;
+      padding-right:10px;
+      color:#000 !important;
+  }
+  #footer li:last-child{
+    border-right:none;
+  }
+  #footer~p{
+    font-size:14px;
+      margin:0;
+  }
+  #footer-p{
+    clear:both;
+  }

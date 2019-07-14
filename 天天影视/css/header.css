@@ -10,21 +10,13 @@
     display: inline-block;
     float: left;
 }
-#head #logo .header_right{
-    width: 800px;
-    float: left;
-}
-#head #logo .header_right .up{
-    width: 900px;
-    height: 35px;
-}
 .down{
     width: 900px !important;
     height: 40px;
     display: inline-block;
 }
 
-/* 登录按钮的样�? */
+/* 登录按钮的样式 */
 button.btn-danger {
     color: red;
     background-color: white !important;

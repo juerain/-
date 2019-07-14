@@ -197,34 +197,17 @@
 }
 .tv-img .tv-p p{
     font-size:15px;
-    color:#333333;
+    color:#666666;
 }
 .tv-img .tv-p h4{
     margin:10px 0 0 10px;
 }
 .tv-p h4 a{
     text-decoration:none;
+    font-size: 18px;
+    color: #333333;
+    font-weight: bolder;
 }
-/* .tv-nav{
-    width:400px;
-    height:600px;
-    float:left;
-    margin-left:5px;
-}
-.tv-nav hr{
-    margin-top:-1px;
-}
-.tv-nav h4{
-    width:370px;
-    height:25px;
-    background-image:linear-gradient(to bottom,#fff,#ddd);
-    line-height:25px;
-    padding-left:30px;
-    margin-bottom:15px;
-}
-.tv-nav h4 a{
-    text-decoration:none;
-} */
 
 
 /*¶þÂ¥ÓÒ²àÑùÊ½*/
