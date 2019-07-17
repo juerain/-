@@ -69,7 +69,7 @@ button.btn-danger:hover{
     border-radius:5px;
     padding:0px 20px;
 }
-#head .search,#head .play_record{
+#head .search {
     display:inline-block;
     width:50px;
     height:32px;
@@ -80,21 +80,58 @@ button.btn-danger:hover{
     text-decoration:none;
     border-radius:5px;
     font-size:14px;
-    /* float: right; */
-
 }
 .search{
     margin: 0px 10px;
 }
-
+#head .play_record,#head .play_record>li{
+    width: 96px;
+    height: 30px;
+}
 #head .play_record{
     background: #ffffff;
-    width:98px;
     color:#0D519C;
     border:1px solid #2E8EDB;
+    display: inline-block;
+    border-radius:5px;
 }
-#head .play_record>img,#head .play_record>span{
+
+#head .play_record img{
     vertical-align: middle;
+}
+/* 播放记录的样式 */
+
+.play_history,.play_history>li{
+    display: inline-block;
+}
+.play_history li{
+    position: relative;
+}
+.play_history>li:hover>ul{
+    display: block;
+}
+.play_history li ul li,.play_history li ul{
+    width: 200px;
+    height: 80px;
+}
+.play_history li ul{
+    position: absolute;
+    top: 21px;
+    left: 0px;
+    display: none;
+    border: 1px solid #aaaaaa;
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.play_history li ul li a,.play_history>li>a{
+    text-decoration: none;
+    font-size: 14px;
+    
+}
+.play_history>li>a{
+    color: #0d519c;
 }
 
 /* .list{

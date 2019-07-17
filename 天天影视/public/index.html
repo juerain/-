@@ -18,7 +18,6 @@
 
 		.wrapper {
 			width: 680px;
-
 		}
 	</style>
 </head>
@@ -109,19 +108,19 @@
 		</header>
 		<!-- 侧边栏 -->
 		<nav>
-			<div class="index_nav">
+			<div id="toTop">
 				<ul>
 					<li>
-						<a href="">电视剧</a>
+						<a href="" id="nav_a1">电视剧</a>
 					</li>
 					<li>
-						<a href="">电影</a>
+						<a href="" id="nav_a2">电影</a>
 					</li>
 					<li>
-						<a href="">动漫卡通</a>
+						<a href="" id="nav_a3">动漫卡通</a>
 					</li>
 					<li>
-						<a href="">综艺节目</a>
+						<a href="" id="nav_a4">综艺节目</a>
 					</li>
 				</ul>
 			</div>
@@ -130,7 +129,7 @@
 		<section>
 			<h3>热播影视</h3>
 			<hr>
-			<div class="hot_tv">
+			<div class="hot_tv add" >
 				<div class="hot-tv-img">
 					<div class="hot-tv-img1">
 						<a href="details.html">
@@ -139,7 +138,7 @@
 						</a>
 						<figcaption>
 							<b>
-								<a href="">加入收藏</a>
+								<a href="details.html">加入收藏</a>
 							</b>
 						</figcaption>
 					</div>
@@ -160,7 +159,7 @@
 						</figcaption>
 					</div>
 					<p>
-						<a href="">大人物</a>
+						<a href="details.html">大人物</a>
 					</p>
 				</div>
 				<div class="hot-tv-img">
@@ -1413,7 +1412,12 @@
 	<script type="text/javascript" src="../js/jquery.min.js"></script>
 	<script type="text/javascript" src="../js/jquery1.min.js"></script>
 	<script type="text/javascript" src="../js/jquery.slicebox.js"></script>
+	<!-- <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/ajax.js"></script>
+  <script src="js/index.js"></script> -->
 	<script type="text/javascript">
+	
 		$(function () {
 
 			var Page = (function () {
@@ -1478,7 +1482,21 @@
 			Page.init();
 
 		});
+
+	// 侧边栏
+		window.onscroll=function(){
+      var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;
+
+      if(scrollTop>700){
+        toTop.className="show"
+		$("div#toTop")="active";
+      }
+	  else{
+        toTop.className=""
+      }
+    }
 	</script>
+	
 </body>
 
 </html>

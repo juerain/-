@@ -48,7 +48,18 @@
     text-decoration: none;
 }
 /* 侧边栏样式 */
-.index_nav{
+#toTop{
+    position:fixed;
+    width:100px;
+    opacity:0;
+    overflow:hidden;
+    transition:all .5s linear;
+  }
+  #toTop.show{
+    opacity:1;
+  }
+
+#toTop{
     width: 80px;
     height: 220px;
     position: fixed;
@@ -58,15 +69,15 @@
     border-radius: 15px;
     display: flex;
 }
-.index_nav ul{
+#toTop ul{
     list-style: none;
     align-self: center;
 }
-.index_nav ul li a:hover{
+#toTop ul li a:hover{
     background: #1540F0;
     color: white;
 }
-.index_nav ul li a{
+#toTop ul li a{
     color: #1540F0;
     font-size: 14px;
     text-decoration: none;
