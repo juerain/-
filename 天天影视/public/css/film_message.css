@@ -1,0 +1,164 @@
+/*清除所有元素的内外边距*/
+*{margin:0;padding:0;}
+.my-header{
+    width:100%;
+    height:160px;
+}
+/*设置最外层div的宽度，内容水平居中*/
+.box{
+    width:1210px;
+    margin:0 auto;
+}
+.message-item ul{
+    list-style:none;
+    margin-top:10px;
+}
+.message-item ul li{
+    float:left;
+    margin-right:5px;
+}
+/*二楼左侧样式*/
+a{
+    text-decoration: none !important;
+}
+.message-item{
+    width:800px;
+    float:left;
+}
+.title{
+    margin-top:15px;
+    margin-left:5px;
+    margin-bottom:-10px;
+}
+.title>a{
+    font-size: 21px;
+    color: #551A88 !important;
+    font-weight: bolder;
+}
+.message_p{
+    font-size: 14px;
+    color: #666666;
+}
+.message_p a{
+    color:#551A88 !important;
+}
+.message-item ul li{
+    margin:10px 10px;
+}
+.message-item>ul>li>a{
+    color: #666666;
+}
+.message-item hr{
+    clear:both;
+}
+.message-item ul li img{
+    display:block;
+    float:right;
+    height:100px;
+    margin-bottom:5px;
+}
+.message-details li{
+    text-indent:30px;
+    line-height:32px;
+    border-bottom:1px dashed #666666;
+}
+.message-details li p{
+    margin-left:5px;
+}
+.message-details li p{
+    margin: 0px;
+}
+/*二楼右侧样式*/
+.tv-nav{
+    width:400px;
+    height:600px;
+    float:left;
+    margin-left:5px;
+    margin-top:21px;
+}
+.tv-nav p{
+    margin-left: 10px;
+    padding-bottom:10px;
+    font-weight: bolder;
+}
+.tv-nav hr{
+    margin-top:-17px;
+}
+.tv-nav a h4{
+    text-decoration:none;
+    font-size: 15px;
+    color: #666666;
+    line-height: 0px;
+}
+.tv-nav img{
+    width: 120px;
+    margin: 10px 18px;
+}
+.card{
+    border: 0px !important;
+}
+.card-header{
+    width:400px;
+    height:25px;
+    background-image: linear-gradient(to bottom,#fff,#ddd);
+    margin:15px;
+    line-height: 0px;
+}
+.hot_film_next{
+    list-style: none;
+    float: right;
+    padding-right: 50px;
+    margin-top: 17px;
+  }
+  .hot_film_next li{
+    padding: 5px;
+  }
+  .hot_film_next b,.hot_film_next span{
+    color: #666666;
+    font-size: 14px;
+  }
+/*底部分页样式*/
+.page-selection{
+    float:left;
+    width:1210px;
+    margin-bottom:10px;
+}
+.page-selection ul{
+    margin:50px 300px;;
+    list-style: none;
+}
+.page-selection ul li{
+    float: left;
+}
+.page-selection ul li a{
+    display:block;
+    height:31px;
+    font-size:14px;
+    border:1px solid #666666;
+    border-radius:5px;
+    text-align:center;
+    line-height:31px;
+    text-decoration:none;
+    margin:0 5px;
+    color:#000;
+}
+.page-selection ul li a:hover{
+    background: #1540f0;
+    color: white;
+}
+.page-selection ul li:nth-child(3) a{
+    background: #1540f0;
+    color: white;
+}
+.page-selection ul li .home-page,.page-selection ul li .end-page{
+    width:54px;
+}
+.page-selection ul li .prev,.page-selection ul li .next{
+    width:68px;
+}
+[class="a"]{
+    width:34px;
+}
+.my-footer{
+    width:100%;
+}

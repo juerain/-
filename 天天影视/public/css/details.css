@@ -1,0 +1,182 @@
+/*清除所有元素的内外边距*/
+*{margin:0;padding:0;}
+/*设置头部宽度，高度*/
+.my-header{
+    width:100%;
+    height:165px;
+}
+/*设置最外层div的宽度，内容水平居中*/
+.box{
+    width:1210px;
+    margin:0 auto;
+}
+.box ul{
+    list-style:none;
+    margin-top:10px;
+}
+.box header ul li,.details li{
+    float:left;
+    margin-right:5px;
+}
+.box p{
+    clear:both;
+    
+    font-size:17px;
+    color:#666;
+}
+/*一楼热播影视样式*/
+.hot-tv-img{
+    width:1210px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+}
+.hot-tv-img div{
+    margin-top: 10px;
+    text-align:center;
+}
+.hot-tv-img div:first-child,.hot-tv-img div:nth-child(2),.hot-tv-img div:nth-child(3),.hot-tv-img div:nth-child(4)
+,.hot-tv-img div:nth-child(5),.hot-tv-img div:nth-child(6),.hot-tv-img div:nth-child(7),.hot-tv-img div:nth-child(8),.hot-tv-img div:nth-child(9),.hot-tv-img div:nth-child(10),.hot-tv-img div:nth-child(11),.hot-tv-img div:nth-child(12){
+    width:180px;height:292px;
+}
+.hot-tv-img img{
+    width:180px;height:252px;
+}
+.hot-tv-img p a{
+    color:#1540F0;
+    font-size:14px;
+    text-decoration:none;
+}
+/*热播影视的样式*/
+/* 更新集数的样式 */
+.hot-tv-img a,.tv a,.film a,.comic a,.variety a{
+    position:relative;
+}
+.hot-tv-img a span,.tv a span,.film a span,.comic a span,.variety a span{
+    position:absolute;
+    top: 118px;
+    left: 0px;
+    width: 100%;
+    height: 20px;
+    background: rgba(30,30,30,0.4);
+    font-size: 10px;
+    color: #ffffff;
+    line-height: 20px;
+}
+/* 鼠标悬停时，图片有闪光的效果 */
+.hot-tv-img .img{
+	position: relative;
+	float: left;
+	overflow: hidden;
+}
+.img figcaption::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 180%;
+	height: 100%;
+	background: rgba(255,255,255,0.7);
+	content: '';
+	transition: transform 0.6s;
+	transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+}
+.img:hover figcaption::before {
+	transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+}
+/*二楼左侧样式*/
+
+.details-box{
+    width:800px;
+    float:left;
+}
+.details{
+    float:right;
+}
+.details li a{
+    text-decoration:none;
+    color: #333333;
+    font-weight: bolder;
+    padding: 10px;
+}
+.details-box h2{
+    float:left;
+}
+.details-box hr{
+    clear:both;
+    margin-bottom:10px;
+    margin-top:41px;
+}
+.details-right ul{
+    clear:both !important;
+}
+.details-right{
+    width:510px;
+    float:right;
+}
+.details-right img{
+    display:inline-block;
+float:right;
+}
+.details-right ul li{
+    margin:20px 0;
+}
+
+
+
+
+/*二楼右侧样式*/
+.tv-nav{
+    width:400px;
+    height:600px;
+    float:left;
+    margin-left:5px;
+    margin-top: 9px;
+    
+}
+.tv-nav p{
+    margin-left: 20px;
+
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+.tv-nav a h4{
+    text-decoration:none;
+    font-size: 15px;
+    color: #666666;
+    line-height: 0px;
+}
+.tv-nav img{
+    width: 120px;
+    margin: 10px 18px;
+}
+.card{
+    border: 0px !important;
+}
+.card div:first-child{
+    margin-top: 0px;
+}
+.card-header{
+    width:400px;
+    height:25px;
+    background-image: linear-gradient(to bottom,#fff,#ddd);
+    margin:15px;
+    
+    line-height: 0px;
+}
+.hot_film_next{
+    list-style: none;
+    float: right;
+    padding-right: 50px;
+    margin-top: 17px;
+  }
+  .hot_film_next li{
+    padding: 5px;
+  }
+  .hot_film_next b,.hot_film_next span{
+    color: #666666;
+    font-size: 14px;
+  }
+
+.my-footer{
+    width:100%;
+}
