@@ -30,7 +30,9 @@
 }
 .hot-film ul li{
     color:#666666 !important;
-    margin:10px 20px;
+    margin:0px 20px;
+    margin-bottom: 12px;
+    font-size: 14px;
 }
 .hot-film hr{
     clear:both;
@@ -126,7 +128,7 @@
     height:600px;
     float:left;
     margin-left:5px;
-    margin-top:21px;
+    margin-top:11px;
 }
 .tv-nav p{
     padding-bottom:10px;

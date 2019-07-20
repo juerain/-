@@ -4,6 +4,7 @@
 .box{
     width:1200px;
     margin:0 auto;
+    margin-top: 25px;
 }
 /*设置头部宽度，高度*/
 .my-header{

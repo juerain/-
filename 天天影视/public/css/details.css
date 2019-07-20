@@ -10,6 +10,11 @@
     width:1210px;
     margin:0 auto;
 }
+hr.hot_hr{
+    margin: 0px;
+    color: #333333 !important;
+    font-weight: bolder !important;
+}
 .box ul{
     list-style:none;
     margin-top:10px;
@@ -18,11 +23,13 @@
     float:left;
     margin-right:5px;
 }
-.box p{
+.box p.hot_p{
     clear:both;
-    
+    margin-bottom: 10px !important;
     font-size:17px;
     color:#666;
+    padding-left: 15px;
+    font-weight: bolder;
 }
 /*一楼热播影视样式*/
 .hot-tv-img{
@@ -130,7 +137,7 @@ float:right;
     height:600px;
     float:left;
     margin-left:5px;
-    margin-top: 9px;
+    margin-top: -5px;
     
 }
 .tv-nav p{

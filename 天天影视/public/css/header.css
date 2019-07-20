@@ -1,12 +1,12 @@
 *{margin:0;padding:0;}
 #head{
     width:1200px;
-    margin:0 auto;
+    margin:10px auto;
 }
 #head #logo .day_film{
     width:300px;
     height: 52px;
-    margin-top: 15px;
+    margin-top: 10px;
     display: inline-block;
     float: left;
 }
@@ -43,11 +43,14 @@ button.btn-danger:hover{
     float:left;
     margin-right:5px;
 }
+.reg-list li a{
+    color: #666666;
+}
 .reg-list li:first-child a,.reg-list li:nth-child(2) a{
     color:#f00;
 }
 .reg-list li:first-child a:hover,.reg-list li:nth-child(2) a:hover{
-    text-decoration: underline;
+    text-decoration: underline !important;
 }
 .reg-list li a,.family ul li a{
     text-decoration:none;
@@ -95,6 +98,8 @@ button.btn-danger:hover{
     display: inline-block;
     border-radius:5px;
     text-align: center;
+    line-height: 30px;
+    box-sizing: content-box;
 }
 
 #head .play_record img{
@@ -124,16 +129,21 @@ button.btn-danger:hover{
     border: 1px solid #aaaaaa;
     background: #ffffff;
     border-radius: 5px;
-    padding: 10px;
     box-sizing: border-box;
 }
 .play_history li ul li a,.play_history>li>a{
     text-decoration: none;
     font-size: 14px;
-    
+    color: #9932CD;
+}
+.play_history li ul li a{
+    padding-right: 90px;
+    margin-top: 15px;
+    display: inline-block;
 }
 .play_history>li>a{
     color: #0d519c;
+    
 }
 
 /* .list{

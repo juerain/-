@@ -5,7 +5,7 @@
     dataType: "json",
 
   }).then(result => {
-    // console.log(result);
+    console.log(result);
     // var [p1, p2, p3, p4, p5, p6] = result;
 
     //   var { title,pic, href,update_num} = p1;
@@ -31,7 +31,7 @@
     }
     // 这里可以简写，将以下代码封装到一个函数中，反复调用
     function addHtml(start, end) {
-      console.log(result)
+      // console.log(result)
       var html = "";
       for (var i = start; i < end; i++) {
         html += `<div class="img">
