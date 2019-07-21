@@ -1,0 +1,75 @@
+/*清除所有元素的内外边距*/
+*{margin:0;padding:0;}
+/*设置最外层div的宽度，内容水平居中*/
+.box{
+    width:1210px;
+    margin:0 auto;
+}
+/*二楼左侧样式*/
+section{
+    width:1210px;
+    height:760px;
+}
+.content-left{
+    width:800px;
+    height:634px;
+    text-align:center;
+    float:left;
+}
+.content-left select{
+    width:92px;
+    height:27px;
+    margin:10px;
+}
+table.film_table{
+    width:800px;
+    height:634px;
+    border-collapse:collapse;
+    font-size:16px;
+}
+table tr:first-child{
+    background-image:linear-gradient(to bottom,#eee,#ccc)
+}
+table tr td{
+    border-bottom:1px dotted #666;
+}
+table tr{
+    color:#666666;
+}
+table tr .d{
+    color:#f00;
+}
+table tr td:nth-child(2){
+    color:#005ea7;
+    font-weight: bolder;
+}
+/*二楼右侧样式*/
+.tv-nav{
+    width:400px;
+    height:600px;
+    float:left;
+    margin-left:5px;
+}
+.tv-nav p{
+    color:#666666;
+    margin:10px;
+    font-size:17px;
+}
+.tv-nav hr{
+    margin-top:-1px;
+}
+.tv-nav h4{
+    width:370px;
+    height:25px;
+    background-image:linear-gradient(to bottom,#fff,#ddd);
+    line-height:25px;
+    padding-left:30px;
+    margin-bottom:20px;
+}
+.tv-nav h4 a{
+    text-decoration:none;
+}
+.my-footer{
+    width:100%;
+    margin-top:80px;
+}
