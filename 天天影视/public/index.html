@@ -26,7 +26,7 @@
 	<header id="header" class="container">
 
 	</header>
-	<div class="box">
+	<div class="box" id="box">
 		
 			
 		<!--主体内容  -->
@@ -133,12 +133,12 @@
 			</nav>
 			<h3>热播影视</h3>
 			<hr>
-			<div class="hot_tv" id="hottv_add" >
-				<!-- <div class="hot-tv-img">
+			<div class="hot_tv"  >
+				<div class="hot-tv-img" v-for="(hot,i) of hotFilm" :key="i">
 					<div class="hot-tv-img1">
 						<a href="details.html">
-							<img src="../img/hottv01.jpg" alt="">
-							<span>更新至25集</span>
+							<img :src="hot.pic" alt="">
+							<span>更新至{{hot.update_num}}集</span>
 						</a>
 						<figcaption>
 							<b>
@@ -147,9 +147,9 @@
 						</figcaption>
 					</div>
 					<p>
-						<a href="">流浪地球</a>
+						<a href="">{{hot.title}}</a>
 					</p>
-				</div> -->
+				</div>
 				<!-- <div class="hot-tv-img">
 					<div class="hot-tv-img1">
 						<a href="details.html">
@@ -583,20 +583,20 @@
 						</li>
 					</ul>
 				</div>
-				<div class="tv-box-img">
+				<div class="tv-box-img" >
 					<hr>
-					<div class="tv" id="tv_add">
-						<!-- <div class="img">
+					<div class="tv" v-for="(tv,i) of tvs" :key="i">
+						<div class="img">
 							<a href="">
-								<img src="../img/tv01.jpg" alt="">
+								<img :src="tv.pic" alt="">
 
-								<span>更新至25集</span>
+								<span>更新至{{tv.update_num}}集</span>
 							</a>
 							<p>
-								<a href="">倚天屠龙记</a>
+								<a href="">{{tv.title}}</a>
 							</p>
 							<figcaption></figcaption>
-						</div> -->
+						</div>
 						<!-- <div class="img">
 							<a href="">
 								<img src="../img/tv02.jpg" alt="">
@@ -799,18 +799,18 @@
 				</div>
 				<div class="tv-box-img">
 					<hr>
-					<div class="tv" id="film_add">
-						<!-- <div class="img">
-							<a href="">
-								<img src="../img/film01.jpg" alt="">
-								<span>更新至25集</span>
+					<div class="tv">
+						<div class="img" v-for="(film,i) of films" :key="i">
+							<a :href="film.href">
+								<img :src="film.pic" alt="">
+								<span>更新至{{film.update_num}}集</span>
 							</a>
 							<p>
-								<a href="">飞驰人生</a>
+								<a href="">{{film.title}}</a>
 							</p>
 							<figcaption></figcaption>
 						</div>
-						<div class="img">
+						<!-- <div class="img">
 							<a href="">
 								<img src="../img/film02.jpg" alt="">
 								<span>更新至25集</span>
@@ -1006,17 +1006,17 @@
 				<div class="tv-box-img">
 					<hr>
 					<div class="tv" id="comic_add">
-						<!-- <div class="img">
-							<a href="">
-								<img src="../img/comic01.jpg" alt="">
-								<span>更新至25集</span>
+						<div class="img" v-for="(comic,i) of comics" :key="i">
+							<a :href="comic.href">
+								<img :src="comic.pic" alt="">
+								<span>更新至{{comic.update_num}}集</span>
 							</a>
 							<p>
-								<a href="">万界神主</a>
+								<a :href="comic.href">{{comic.title}}</a>
 							</p>
 							<figcaption></figcaption>
 						</div>
-						<div class="img">
+						<!-- <div class="img">
 							<a href="">
 								<img src="../img/comic02.jpg" alt="">
 								<span>更新至25集</span>
@@ -1215,18 +1215,18 @@
 				</div>
 				<div class="tv-box-img">
 					<hr>
-					<div class="tv" id="variety_add">
-						<!-- <div class="img">
-							<a href="">
-								<img src="../img/variety01.jpg" alt="">
-								<span>更新至25集</span>
+					<div class="tv" id="variety_add" v-for="(variety,i) of varietys" :key="i">
+						<div class="img">
+							<a :href="variety.href">
+								<img :src="variety.pic" alt="">
+								<span>更新至{{variety.update_num}}集</span>
 							</a>
 							<p>
-								<a href="">明日之子</a>
+								<a :href="variety.href">{{variety.title}}</a>
 							</p>
 							<figcaption></figcaption>
 						</div>
-						<div class="img">
+						<!-- <div class="img">
 							<a href="">
 								<img src="../img/variety02.jpg" alt="">
 								<span>更新至25集</span>
@@ -1419,6 +1419,7 @@
   <script src="js/bootstrap.js"></script>
   <script src="js/ajax.js"></script>
   <script src="js/index.js"></script>
+  <script src="js/vue.js"></script>
   <script src="js/header.js"></script>
   <script src="js/footer.js"></script>
 	<script type="text/javascript">
