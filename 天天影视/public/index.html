@@ -136,18 +136,18 @@
 			<div class="hot_tv"  >
 				<div class="hot-tv-img" v-for="(hot,i) of hotFilm" :key="i">
 					<div class="hot-tv-img1">
-						<a href="details.html">
+						<a :href="hot.href">
 							<img :src="hot.pic" alt="">
 							<span>更新至{{hot.update_num}}集</span>
 						</a>
 						<figcaption>
 							<b>
-								<a href="details.html">加入收藏</a>
+								<a :href="hot.href">加入收藏</a>
 							</b>
 						</figcaption>
 					</div>
 					<p>
-						<a href="">{{hot.title}}</a>
+						<a :href="hot.href">{{hot.title}}</a>
 					</p>
 				</div>
 				<!-- <div class="hot-tv-img">
@@ -587,13 +587,13 @@
 					<hr>
 					<div class="tv" v-for="(tv,i) of tvs" :key="i">
 						<div class="img">
-							<a href="">
+							<a :href="tv.href">
 								<img :src="tv.pic" alt="">
 
 								<span>更新至{{tv.update_num}}集</span>
 							</a>
 							<p>
-								<a href="">{{tv.title}}</a>
+								<a :href="tv.href">{{tv.title}}</a>
 							</p>
 							<figcaption></figcaption>
 						</div>
@@ -806,7 +806,7 @@
 								<span>更新至{{film.update_num}}集</span>
 							</a>
 							<p>
-								<a href="">{{film.title}}</a>
+								<a :href="film.href">{{film.title}}</a>
 							</p>
 							<figcaption></figcaption>
 						</div>
