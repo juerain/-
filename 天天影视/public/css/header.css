@@ -123,8 +123,8 @@ button.btn-danger:hover{
 }
 .play_history li ul{
     position: absolute;
-    top: 29px;
-    left: -11px;
+    top: 31px;
+    left: -12px;
     display: none;
     border: 1px solid #aaaaaa;
     background: #ffffff;

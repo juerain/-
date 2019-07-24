@@ -7,7 +7,7 @@
         // console.log(result);
         // var [p1, p2, p3, p4, p5, p6] = result;
         new Vue({
-          el:"#box",
+          el:"#add",
           data:{
             hotFilm:result.slice(0,12),
             tvs:result.slice(12,22),

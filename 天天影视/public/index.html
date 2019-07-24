@@ -8,35 +8,71 @@
 	<link rel="stylesheet" type="text/css" href="css/demo.css" />
 	<link rel="stylesheet" type="text/css" href="css/slicebox.css" />
 	<link rel="stylesheet" type="text/css" href="css/custom.css" />
+	<link rel="stylesheet" href="css/in.css">
 	<style></style>
-	
-	<style>
-		.box1 {
-			width: 660px;
-			margin-top: 35px;
-		}
 
-		.wrapper {
-			width: 680px;
-		}
-	</style>
 </head>
 
 <body>
 	<header id="header" class="container">
 
 	</header>
-	<div class="box" id="box">
-		
-			
+	<div class="box">
+
+
 		<!--主体内容  -->
 		<section>
 			<!--轮播图  -->
 			<div class="carousel">
-					<div class="carousel-img">
-						<div class="box1">
-							<div class="wrapper">
-								<ul id="sb-slider" class="sb-slider">
+				<div class="carousel-img">
+
+
+					<main id="main">
+						<div id="banner">
+							<div id="btn-left"></div>
+							<ul id="ul-imgs" style="width:5000px; margin-left:0px;">
+								<li>
+									<a href="javascript:;">
+										<img src="img/index/nav01.jpg">
+										<span>决战食神</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<img src="img/index/nav02.jpg">
+										<span>掠夺者</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<img src="img/index/nav03.jpg">
+										<span>摆渡人</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<img src="img/index/nav04.jpg">
+										<span>蝙蝠侠</span>
+									</a>
+								</li>
+								<!--注意！最后li个数要比实际图片张数多1，最后一个li里的img是重复第一张li的图片-->
+								<li>
+									<a href="javascript:;">
+										<img src="img/index/nav01.jpg">
+									</a>
+								</li>
+							</ul>
+							<ul id="ul-idxs">
+								<!--虽然li个数比实际图片张数多1，但小圆点的个数不必多1-->
+								<li class="active"></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+							<div id="btn-right"></div>
+						</div>
+					</main>
+					<!-- <ul id="sb-slider" class="sb-slider">
 									<li>
 										<a href="" target="_blank">
 											<img src="img/index/nav01.jpg" alt="image1" />
@@ -83,35 +119,35 @@
 								<div id="nav-arrows" class="nav-arrows">
 									<a href="#">Next</a>
 									<a href="#">Previous</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!--  轮播图右侧条目-->
-					<div class="carousel-item">
-						<ul>
-							<li>
-								<a href="">《三少爷的剑》徐克尔东升联手淬炼 何润东</a>
-							</li>
-							<li>
-								<a href="">《五女闹东京》发先导预告五"铁密"变身古惑仔</a>
-							</li>
-							<li>
-								<a href="">《怨灵地下室》今天上映民国背景融入</a>
-							</li>
-							<li>
-								<a href="">《喵星人》定档2017暑期斥资2亿打造</a>
-							</li>
-							<li>
-								<a href="">《游戏规则》发燃情版预告黄子韬开启</a>
-							</li>
-							<li>
-								<a href="">《游戏规则》发燃情版预告黄子韬开启</a>
-							</li>
-						</ul>
-					</div>
+								</div> -->
+
+
 				</div>
-			
+				<!--  轮播图右侧条目-->
+				<div class="carousel-item">
+					<ul>
+						<li>
+							<a href="">《三少爷的剑》徐克尔东升联手淬炼 何润东</a>
+						</li>
+						<li>
+							<a href="">《五女闹东京》发先导预告五"铁密"变身古惑仔</a>
+						</li>
+						<li>
+							<a href="">《怨灵地下室》今天上映民国背景融入</a>
+						</li>
+						<li>
+							<a href="">《喵星人》定档2017暑期斥资2亿打造</a>
+						</li>
+						<li>
+							<a href="">《游戏规则》发燃情版预告黄子韬开启</a>
+						</li>
+						<li>
+							<a href="">《游戏规则》发燃情版预告黄子韬开启</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
 			<!-- 侧边栏 -->
 			<nav>
 				<div id="toTop">
@@ -133,7 +169,8 @@
 			</nav>
 			<h3>热播影视</h3>
 			<hr>
-			<div class="hot_tv"  >
+			<div  id="add">
+			<div class="hot_tv" >
 				<div class="hot-tv-img" v-for="(hot,i) of hotFilm" :key="i">
 					<div class="hot-tv-img1">
 						<a :href="hot.href">
@@ -141,7 +178,7 @@
 							<span>更新至{{hot.update_num}}集</span>
 						</a>
 						<figcaption>
-							<b>
+							<b style="cursor: pointer">
 								<a :href="hot.href">加入收藏</a>
 							</b>
 						</figcaption>
@@ -355,7 +392,7 @@
 					<dl>
 						<dt>
 							<a href="">
-								<img src= "img/index/tv01.gif" alt="">
+								<img src="img/index/tv01.gif" alt="">
 								<p>CCTV1综合</p>
 							</a>
 						</dt>
@@ -583,7 +620,7 @@
 						</li>
 					</ul>
 				</div>
-				<div class="tv-box-img" >
+				<div class="tv-box-img">
 					<hr>
 					<div class="tv" v-for="(tv,i) of tvs" :key="i">
 						<div class="img">
@@ -1406,103 +1443,37 @@
 				</div>
 			</div>
 		</section>
-		
+	</div>
 	</div>
 	<footer id="footer"></footer>
-	
+	<script src="js/in.js"></script>
 	<script src="js/jquery-3.2.1.js"></script>
-
-	<!-- <script type="text/javascript" src="../js/jquery.min.js"></script> -->
-	<!-- <script type="text/javascript" src="../js/jquery1.min.js"></script> -->
-	<!-- <script type="text/javascript" src="../js/jquery.slicebox.js"></script> -->
 	<script type="text/javascript" src="../js/modernizr.custom.46884.js"></script>
-  <script src="js/bootstrap.js"></script>
-  <script src="js/ajax.js"></script>
-  <script src="js/index.js"></script>
-  <script src="js/vue.js"></script>
-  <script src="js/header.js"></script>
-  <script src="js/footer.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/ajax.js"></script>
+
+	<script src="js/index.js"></script>
+	<script src="js/vue.js"></script>
+
+	<script src="js/header.js"></script>
+
+	<script src="js/footer.js"></script>
+
 	<script type="text/javascript">
-	
-		// $(function () {
+		// 侧边栏
+		window.onscroll = function () {
+			var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
 
-		// 	var Page = (function () {
-
-		// 		var $navArrows = $('#nav-arrows').hide(),
-		// 			$navOptions = $('#nav-options').hide(),
-		// 			$shadow = $('#shadow').hide(),
-		// 			slicebox = $('#sb-slider').slicebox({
-		// 				onReady: function () {
-
-		// 					$navArrows.show();
-		// 					$navOptions.show();
-		// 					$shadow.show();
-
-		// 				},
-		// 				orientation: 'h',
-		// 				cuboidsCount: 3
-		// 			}),
-
-		// 			init = function () {
-
-		// 				initEvents();
-
-		// 			},
-		// 			initEvents = function () {
-
-		// 				// add navigation events
-		// 				$navArrows.children(':first').on('click', function () {
-
-		// 					slicebox.next();
-		// 					return false;
-
-		// 				});
-
-		// 				$navArrows.children(':last').on('click', function () {
-
-		// 					slicebox.previous();
-		// 					return false;
-
-		// 				});
-
-		// 				$('#navPlay').on('click', function () {
-
-		// 					slicebox.play();
-		// 					return false;
-
-		// 				});
-
-		// 				$('#navPause').on('click', function () {
-
-		// 					slicebox.pause();
-		// 					return false;
-
-		// 				});
-
-		// 			};
-
-		// 		return { init: init };
-
-		// 	})();
-
-		// 	Page.init();
-
-		// }); 
-
-	// 侧边栏
-		window.onscroll=function(){
-      var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;
-
-      if(scrollTop>700){
-        toTop.className="show"
-		$("div#toTop")="active";
-      }
-	  else{
-        toTop.className=""
-      }
-    }
+			if (scrollTop > 700) {
+				toTop.className = "show"
+				$("div#toTop") = "active";
+			}
+			else {
+				toTop.className = ""
+			}
+		}
 	</script>
-	
+
 </body>
 
 </html>
