@@ -1,6 +1,7 @@
 <template>
     <div>
         <my-header></my-header>
+        <Carousel></Carousel>
         <div class="container">
     <section class="m-auto">
         <div class="row">
@@ -36,7 +37,16 @@
             </div>
         </div>
         <div class="row read2 mt-5 ">
-            <div class="col-lg-3 col-md-6 col-sm-6 p-0" v-for="(a1,i) of arr1" :key="i">
+            <div class="col-lg-3 col-md-6 col-sm-6 p-0" v-for="(a1,i) of arr1 " :key="i">
+                <div class="mr-2 text-center prop-box p-2">
+                    <router-link :to="`/details/${a1.href.split('=')[1]}`" ><img :src="a1.pic" alt=""/></router-link>
+                    <div>
+                        <span class="prop-name mt-3 ml-3">销量： {{a1.salecount}}</span><span class="prop-price mt-2 mr-3">¥{{parseInt(a1.price).toFixed(2)}}</span>
+                        <p class="prop-title mt-5" v-text="a1.title"></p>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col-lg-3 col-md-6 col-sm-6 p-0" v-for="(a1,i) of arr1" :key="i">
                 <div class=" text-center prop-box p-2">
                     <router-link :to="`/details/${a1.href.split('=')[1]}`"><img :src="a1.pic" alt=""/></router-link>
                     <div>
@@ -44,7 +54,7 @@
                         <p class="prop-title mt-5" >{{a1.title}}</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- <div class="col-lg-3 col-md-6 col-sm-6 p-0">
                 <div class="mr-2 text-center prop-box pull-two p-2">
                     <a href=""><img src="img/index/full-name06.jpg" alt=""/></a>
@@ -144,7 +154,7 @@
                 </div>
             </div>
         </div>
-        <div class="row read2 mt-5">
+        <div class="row read2 mt-3">
             <div class="col-lg-3 col-md-6 col-sm-6 p-0" v-for="(a3,i) of arr3" :key="i">
                 <div class="mr-2 text-center prop-box p-2">
                     <router-link :to="`/details/${a3.href.split('=')[1]}`"><img :src="a3.pic" alt=""/></router-link>>
@@ -253,7 +263,7 @@
                 </div>
             </div>
         </div>
-        <div class="row read2 mt-5">
+        <div class="row read2 mt-3">
             <div class="col-lg-3 col-md-6 col-sm-6 p-0" v-for="(a5,i) of arr5" :key="i">
                 <div class="mr-2 text-center prop-box p-2">
                     <router-link :to="`/details/${a5.href.split('=')[1]}`"><img :src="a5.pic" alt=""/></router-link>
@@ -338,6 +348,8 @@
 </template>
 
 <script>
+// 引入轮播图的子组件
+import Carousel from "../components/Carousel.vue"
 export default {
     data(){
         return {
@@ -362,6 +374,8 @@ export default {
 
             }
     },
+    // 注册子组件
+    components:{Carousel},
     created() {
         this.axios.get("http://localhost:5050/index")
         .then(result=>{
@@ -466,6 +480,9 @@ export default {
     .img-h>div:nth-child(2)>div,.img-h>div:nth-child(4)>div{
         padding-right: 0px !important;
     }
+    .read2>div:first-child,.read2>div:nth-child(2){
+      margin-bottom: 0.5rem
+  }
 }
 @media screen and (max-width: 767px){
     .pull-two{
@@ -480,6 +497,9 @@ export default {
     .img-h>div:nth-child(2)>div,.img-h>div:nth-child(4)>div{
         padding-right: 0px !important;
     }
+    .read2>div:first-child,.read2>div:nth-child(2){
+      margin-bottom: 0.5rem;
+  }
 
 }
 

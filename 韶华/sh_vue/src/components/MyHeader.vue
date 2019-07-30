@@ -32,7 +32,7 @@
 <div class="nav-box">
     <div class="d-flex flex-row home-page justify-content-around">
         <div class="ml-5">
-            <ul class="list-unstyled ">
+            <ul class="list-unstyled " @click="focus">
                 <li class="float-left text-center active"><a href="index.html" class="text-white ">首页</a></li>
                 <li class="float-left text-center"><router-link :to="`/products`" href="pro-center.html" class="text-white ">产品中心</router-link> </li>
                 <li class="float-left text-center"><router-link :to="`/book`" href="book.html" class="text-white "> 图书</router-link></li>
@@ -46,22 +46,22 @@
         </div>
     </div>
 </div>
-<div id="demo" class="carousel" data-ride="carousel">
-    <div class="carousel-inner">
-            <div class="carousel-item active"><img src="img/index/carousel1.jpg" alt="" class="w-100"/></div>
-            <div class="carousel-item"><img src="img/index/carousel2.jpg" alt="" class="w-100"/></div>
-        </div>
-        <ul class="carousel-indicators carousel">
-            <li class="active" data-slide-to="0" data-target="#demo"></li>
-            <li data-slide-to="1" data-target="#demo"></li>
-        </ul>
-    </div>
+
     </header>
 </template>
 
 <script>
 export default {
-    
+    data(){
+        return{
+
+        }
+    },
+    methods: {
+        focus(e){
+            
+        }
+    },
 }
 </script>
 
