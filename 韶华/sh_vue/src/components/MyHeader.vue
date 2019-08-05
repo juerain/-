@@ -19,14 +19,19 @@
         </div>
     </div>
 </div>
+    <!-- 搜索栏 -->
 <div class="book-box m-2">
     <div class="d-flex book justify-content-around">
         <div>
             <a href=""><img src="img/index/book_logo.png" alt=""/></a>
         </div>
-        <div class="mt-4">
+        <div class="mt-4 search">
             <input type="text" placeholder="请输入要搜索的内容" class="pl-2"/>
+            <div class="my_cart">
+                <span>我的购物车</span>
+            </div>
         </div>
+        
     </div>
 </div>
 <div class="nav-box">

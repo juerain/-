@@ -435,7 +435,7 @@ export default {
     display: inline-block;
     float: left;
     color: #999999;
-    font-size: 14px;
+    font-size: 14px !important;
 
 }
 .prop-price{
@@ -446,6 +446,7 @@ export default {
 }
 .prop-title{
     clear: both;
+    font-size: 14px;
 }
 .prop-box{
     overflow: hidden;

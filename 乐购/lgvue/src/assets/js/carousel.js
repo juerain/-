@@ -1,5 +1,5 @@
 var i=0;
-    var LIWIDTH=1000;
+    var LIWIDTH=640;
     var DURATION=500;
     var LICOUNT=4;
     var ulImgs=document.getElementById("ul-imgs");

@@ -304,7 +304,7 @@ export default {
         font-size: 15px;
     }
     div.log_rigth{
-        background-image: url(../../public/img/header/log_right.png);
+        /* background-image: url(../../public/img/header/log_right.png); */
     }
     
 </style>

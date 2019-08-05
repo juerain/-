@@ -1,13 +1,24 @@
 *{margin:0; padding:0;}
     #main{
-      width:1000px;
+      width:640px;
       margin:0 auto;
+      height: 320px;
+      float: left;
     }
     #banner{
-      width:1000px;
+      width:640px;
       overflow:hidden;
       position:relative;
     }
+
+.carousel-img{
+  width: 640px;
+  height: 320px;
+  margin-top: 15px;
+  margin-right: 15px;
+  margin-left: 5px;
+}
+
     #ul-imgs{
       list-style:none;
     }
@@ -15,11 +26,11 @@
       transition:all .5s linear;
     }
     #ul-imgs>li{
-      width:1000px;
+      width:640px;
       float:left;
     }
     #ul-imgs img{
-      width:1000px;
+      width:640px;
     }
     #ul-idxs{
       width:100px;
@@ -52,12 +63,32 @@
     }
     #btn-left{
       left:20px;
-      background-image:url(../image/carousel_item/left_ar.png);
+      /* background-image:url(../image/carousel_item/left_ar.png); */
     }
     #btn-right{
       right:20px;
-      background-image:url(../image/carousel_item/right_ar.png);
+      /* background-image:url(../image/carousel_item/right_ar.png); */
     }
     #btn-left:hover,#btn-right:hover{
       background-size:40px 70px
     }
+
+
+
+    /* 鼠标移入图片时，下方出现影视名称 */
+    #main ul li a span{
+      position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 0px;
+    background-color: rgba(200,200,200,0.4);
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+    color: #FF5200;
+    font-weight: bold;
+    transition: all 0.5s linear;
+    /* overflow: hidden;  */
+    }
+    

@@ -131,7 +131,7 @@
                             <router-link :to="`/details/${a3.href.split('=')[1]}`"><img :src="a3.pic" alt=""/></router-link>
                         
                         <div>
-                            <span class="prop-name mt-3 ml-3">销量： {{a3.scalecount}}</span><span class="prop-price mt-2 mr-3">¥{{parseInt(a3.price).toFixed(2)}}</span>
+                            <span class="prop-name mt-3 ml-3">销量： {{a3.salecount}}</span><span class="prop-price mt-2 mr-3">¥{{parseInt(a3.price).toFixed(2)}}</span>
                              <p class="prop-title mt-5" v-text="a3.title"></p>
                         </div>
                     </div>
@@ -178,7 +178,7 @@
                             <a href=""><img :src="a4.pic" alt=""/></a>
                         </div>
                         <div>
-                            <span class="prop-name mt-3 ml-3">销量： {{a4.scalecount}}</span><span class="prop-price mt-2 mr-3">¥{{parseInt(a4.price).toFixed(2)}}</span>
+                            <span class="prop-name mt-3 ml-3">销量： {{a4.salecount}}</span><span class="prop-price mt-2 mr-3">¥{{parseInt(a4.price).toFixed(2)}}</span>
                             <p class="prop-title mt-5" v-text="a4.title"></p>
                         </div>
                     </div>
@@ -225,7 +225,7 @@
                             <a href=""><img :src="a5.pic" alt=""/></a>
                         </div>
                         <div>
-                            <span class="prop-name mt-3 ml-3">销量： {{a5.scalecount}}</span><span class="prop-price mt-2 mr-3">¥{{parseInt(a5.price).toFixed(2)}}</span>
+                            <span class="prop-name mt-3 ml-3">销量： {{a5.salecount}}</span><span class="prop-price mt-2 mr-3">¥{{parseInt(a5.price).toFixed(2)}}</span>
                              <p class="prop-title mt-5" v-text="a5.title"></p>
                         </div>
                     </div>
@@ -373,17 +373,19 @@ div.read2 div.product_title {
   display: block;
   float: right;
   color: #cc0b0e;
-  font-size: 20px;
+  font-size: 20px !important;
 }
 .prop-title {
+  padding-top: 10px;
   clear: both;
+  font-size: 14px;
 }
 
 
 .img-box {
   overflow: hidden;
 }
-.img-box > a > img:hover {
+.img-box > a > img:hover,.prop-box>a>img:hover {
   transform: scale(1.1);
   transition: 0.8s ease-in-out;
 }

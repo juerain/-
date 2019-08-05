@@ -24,9 +24,9 @@ var i=0;
       i=to;
       ulImgs.style.marginLeft=-i*LIWIDTH+"px";
       for(var li of lis){
-        li.className=""
+        li.className="";
       }
-      console.log(i);
+      // console.log(i);
       if(i==LICOUNT){
         i=0;
         setTimeout(function(){
@@ -47,7 +47,7 @@ var i=0;
     }
     function move(n){
       if(canClick){
-        console.log(i+n);
+        // console.log(i+n);
         moveTo(i+n);
         canClick=false;
         setTimeout(function(){
