@@ -1,0 +1,12 @@
+ /*轮播图样式*/
+ .carousel-indicators li{
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+}
+ul.carousel .active{
+    background-color: #ff8800 !important;
+}
+div.carousel-inner img{
+    height: 540px;
+}

@@ -14,10 +14,10 @@
           <img class="d-block w-100" src="img/index/carousel2.jpg" alt="Second slide">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="img/index/carousel1.jpg" alt="Third slide">
+          <img class="d-block w-100" src="img/index/carousel10.jpg" alt="Third slide">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="img/index/carousel2.jpg" alt="4th slide">
+          <img class="d-block w-100" src="img/index/carousel5.jpg" alt="4th slide">
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -36,6 +36,6 @@ export default {
 }
 </script>
 <style>
-  
+   @import url("../assets/css/carousel.css");
 </style>
 
