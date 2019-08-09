@@ -18,7 +18,7 @@
                     </div>
                     <div class="collect">
                         <a href="">收藏</a>
-                        <span>|</span>
+                        <span class="m-2">|</span>
                         <a href="">我的收藏夹</a>
                     </div>
                 </div>
@@ -35,7 +35,7 @@
                     <div>
                         <span>规格：</span><a href="" class="spec" v-text="details.spec"></a>
                     </div>
-                    <div class="product_count">
+                    <div class="product_count mt-3">
                         <span>数量：</span><a>-</a><input type="text" placeholder="1"/><a>+</a>
                     </div>
                     <div>
@@ -66,7 +66,7 @@
                     <p>包装：平装</p>
                 </div>
             </div>
-            <div class="row mt-4">
+            <div class="row mt-4 details">
                 <div class="col">
                     <img v-for="(p,i) of dpics" :key="i" :src="p.pic" alt=""/>
                     <img src="img/details/details02.jpg" alt=""/>
@@ -181,16 +181,19 @@ export default {
         width: 28px;
         height: 26px;
         display: inline-block;
-        font-size: 22px;
+        font-size: 18px;
         text-align: center;
         color: #999999;
         background: #eeeeee;
+        line-height: 22px;
+        border: 1px solid #bdbdbd;
     }
     div.product_count input{
         width: 45px;
         height: 26px;
         background: #fff;
         padding: 0 5px;
+        text-align: center;
     }
     /* 价格样式 */
     .price{
@@ -254,5 +257,8 @@ export default {
         font-size: 14px;
         color: #666666;
         margin-top: 10px;
+    }
+    div.details{
+        /* height: 2000px; */
     }
 </style>

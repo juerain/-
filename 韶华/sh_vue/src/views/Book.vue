@@ -354,10 +354,10 @@ div.read2 div.product_title {
 .prop-box {
   border: 1px solid #aaa;
 }
-.prop-box>div p{
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+.prop-box > div p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .prop-name {
   display: inline-block;
@@ -380,11 +380,11 @@ div.read2 div.product_title {
 .img-box {
   overflow: hidden;
 }
-.prop-box>a>img:hover{
-    transform: scale(1.1);
-    transition: 0.8s ease-in-out;
+.prop-box > a > img:hover {
+  transform: scale(1.1);
+  transition: 0.8s ease-in-out;
 }
-.img-box > a > img:hover{
+.img-box > a > img:hover {
   transform: scale(1.1);
   transition: 0.8s ease-in-out;
 }
