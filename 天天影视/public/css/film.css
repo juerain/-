@@ -11,7 +11,7 @@
 }
 .box ul{
     list-style:none;
-    margin-top:10px;
+    margin-top:14px;
 }
 
 .box ul li{
@@ -210,7 +210,7 @@
 }
 
 
-/*二楼右侧样式*/
+/* 二楼右侧样式
 .tv-nav{
     width:400px;
     height:600px;
@@ -263,7 +263,7 @@
   .hot_film_next b,.hot_film_next span{
     color: #666666;
     font-size: 14px;
-  }
+  } */
 /*底部分页样式*/
 .page-selection{
     float:left;
@@ -271,7 +271,7 @@
     margin-bottom:10px;
 }
 .page-selection ul{
-    margin:60px 300px;;
+    margin:70px 300px;;
 }
 .page-selection ul li a{
     display:block;

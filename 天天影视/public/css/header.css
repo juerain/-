@@ -50,7 +50,7 @@ button.btn-danger:hover{
     color:#f00;
 }
 .reg-list li:first-child a:hover,.reg-list li:nth-child(2) a:hover{
-    text-decoration: underline !important;
+    text-decoration: underline;
 }
 .reg-list li a,.family ul li a{
     text-decoration:none;

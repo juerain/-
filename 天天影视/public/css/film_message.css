@@ -69,7 +69,7 @@ a{
     margin: 0px;
 }
 /*二楼右侧样式*/
-.tv-nav{
+/* .tv-nav{
     width:400px;
     height:600px;
     float:left;
@@ -116,7 +116,7 @@ a{
   .hot_film_next b,.hot_film_next span{
     color: #666666;
     font-size: 14px;
-  }
+  } */
 /*底部分页样式*/
 .page-selection{
     float:left;
