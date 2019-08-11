@@ -8,6 +8,9 @@ const details=require("./routes/details");
 const book=require("./routes/book");
 const video=require("./routes/video");
 const cors=require("cors");
+const register=require("./routes/register");
+const login=require("./routes/login");
+const cart=require("./routes/cart");
 /*引入路由模块*/
 
 
@@ -28,4 +31,7 @@ app.use("/products",products);
 app.use("/book",book);
 app.use("/video",video);
 app.use("/details",details);
+app.use("/register",register);
+app.use("/login",login);
+app.use("/cart",cart);
 

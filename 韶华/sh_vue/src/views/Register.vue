@@ -4,12 +4,12 @@
             <header class="head">
                 <div class="row">
                     <div class="col-6">
-                        <img src="../../public/img/index/book_logo.png" alt=""/>
+                        <router-link :to="`/`"><img src="../../public/img/index/book_logo.png" alt=""/></router-link>
                         <span class="pl-5 pt-4 d-inline-block register">会员注册</span>
                     </div>
                     <div class="col-6 d-flex justify-content-sm-end">
                         <span class="hyzh">已有会员账号</span>
-                        <a href="" class="btn btn-light border reg_btn">登录</a>
+                        <router-link  :to="`/login/`" class="btn btn-light border reg_btn">登录</router-link>
                     </div>
                 </div>
                 <hr/>
@@ -17,7 +17,7 @@
             <div class="row">
                 <div class="col m-4 pt-4">
                     <span>用&nbsp;&nbsp;户&nbsp;&nbsp;名：</span>
-                    <input type="text" class="w-50" name="username"/>
+                    <input v-model="uname" type="text" class="w-50" name="username"/>
                     <span>*</span>
                     <span class="vali_info">请输入3-15位以字母开头的字母或数字</span>
                 </div>
@@ -25,7 +25,7 @@
             <div class="row">
                 <div class="col m-4" >
                     <span>&nbsp;密&nbsp;&nbsp;&nbsp;码&nbsp;&nbsp;&nbsp;：</span>
-                    <input type="password" class="w-50" name="pwd"/>
+                    <input v-model="pwd" type="password" class="w-50" name="pwd"/>
                     <span>*</span>
                     <span class="vali_info">请输入4-10的字母或数字</span>
                 </div>
@@ -41,7 +41,7 @@
             <div class="row">
                 <div class="col m-4">
                     <span>&nbsp;邮&nbsp;&nbsp;&nbsp;箱&nbsp;&nbsp;&nbsp;：</span>
-                    <input type="text" class="w-50" name="email"/>
+                    <input v-model="email" type="text" class="w-50" name="email"/>
                     <span>*</span>
                     <span class="vali_info">请输入正确的邮箱</span>
                 </div>
@@ -60,7 +60,7 @@
             </div>
             <div class="row">
                 <div class="col m-4 text-center">
-                    <button class="w-25 comit">提交</button>
+                    <button @click="commit" class="w-25 comit">提交</button>
                 </div>
             </div>
             <div class="row">
@@ -72,7 +72,37 @@
     </div>
 </template>
 
-<script ></script>
+<script>
+export default {
+    data(){
+        return{
+            uname:"",
+            pwd:"",
+            email:""
+        }
+    },
+    methods: {
+        commit(){
+            // 获取用户名
+            var uname=this.uname;
+            // 获取密码
+            var pwd=this.pwd;
+            // 获取邮箱
+            var email=this.email;
+            var obj={uname:uname,pwd:pwd,email:email}
+            this.axios("http://localhost:5050/register",{params:obj})
+            .then(res=>{
+                console.log(res);
+                if(res.data.code==-1){
+                    this.$toast("用户名或密码有误")
+                }else{
+                    this.$router.push("/login")
+                }
+            })
+        }
+    },
+}
+</script>
 
 
 

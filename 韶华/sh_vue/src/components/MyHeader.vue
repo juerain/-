@@ -9,11 +9,11 @@
         <div class="float-right login">
             <ul class="list-unstyled mr-3">
                 <li class="list-inline-item mr-3 ">
-                    <a href="" class="text-white d-inline-block pl-5">登录</a>
+                    <router-link  :to="`/login/`" class="text-white d-inline-block pl-5">登录</router-link>
                 </li>
                 <li class="list-inline-item mr-3  text-white">|</li>
                 <li class="list-inline-item mr-3 ">
-                    <a href="" class="text-white pl-4">注册</a>
+                    <router-link  :to="`/register/`" class="text-white pl-4">注册</router-link>
                 </li>
             </ul>
         </div>
@@ -39,9 +39,9 @@
         <div class="ml-5">
             <ul class="list-unstyled " @click="focus">
                 <li class="float-left text-center active"><a href="index.html" class="text-white ">首页</a></li>
-                <li class="float-left text-center"><router-link :to="`/products`" href="pro-center.html" class="text-white ">产品中心</router-link> </li>
-                <li class="float-left text-center"><router-link :to="`/book`" href="book.html" class="text-white "> 图书</router-link></li>
-                <li class="float-left text-center"> <router-link :to="`/video`" href="audio-video.html" class="text-white ">音像</router-link></li>
+                <li class="float-left text-center"><router-link :to="`/products/`" href="pro-center.html" class="text-white ">产品中心</router-link> </li>
+                <li class="float-left text-center"><router-link :to="`/book/`" href="book.html" class="text-white "> 图书</router-link></li>
+                <li class="float-left text-center"> <router-link :to="`/video/`" href="audio-video.html" class="text-white ">音像</router-link></li>
             </ul>
         </div>
         <div>

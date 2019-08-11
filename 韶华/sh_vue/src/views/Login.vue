@@ -3,11 +3,11 @@
         <div class="container">
             <div class="row nav">
                 <div class="col-6">
-                    <img class="pb-4" src="../../public/img/index/book_logo.png" alt=""/>
+                    <router-link :to="`/`"><img class="pb-4" src="../../public/img/index/book_logo.png" alt=""/></router-link>
                     <span class="pt-3 pl-5 ">会员登录</span>
                 </div>
                 <div class="col-6">
-                    <p class="pt-5 float-right">没有会员账号？<a href="" class="reg">注册</a></p>
+                    <p class="pt-5 float-right">没有会员账号？<router-link  :to="`/register/`" class="reg">注册</router-link></p>
                 </div>
             </div>
             <div class="row content">
@@ -16,10 +16,10 @@
                 </div>
                 <div class="col-6 input_item">
                     <div class="input_box">
-                        <input type="text" class="w-100 p-1">
-                        <input type="password" class="w-100 mt-3 p-1">
+                        <input v-model="uname" type="text" class="w-100 p-1">
+                        <input v-model="upwd" type="password" class="w-100 mt-3 p-1">
                         <input type="text" class="w-75 mt-3 p-1" >
-                        <input type="button" value="登录" class="w-100 mt-3 login_button">
+                        <input @click="login" type="button" value="登录" class="w-100 mt-3 login_button">
                         <div class="forget_pwd">
                             <a href="">忘记密码？</a>
                             <a href="" class="reg">免费注册</a>
@@ -36,7 +36,31 @@
 
 <script>
 export default {
-    
+    data(){
+        return{
+            uname:"",
+            upwd:""
+        }
+    },
+    methods: {
+        
+        login(){
+            var uname=this.uname;
+            var upwd=this.upwd;
+            var obj={uname:uname,upwd:upwd};
+            this.axios("http://localhost:5050/login",{params:obj})
+            .then(res=>{
+                // console.log(res);
+                if(res.data.code==-1){
+                    this.$toast("用户名或密码有误");
+                }else{
+                    this.$router.push("/");
+                }
+
+            })
+        }
+    },
+
 }
 </script>
 

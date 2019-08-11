@@ -39,11 +39,11 @@
                         <span>数量：</span><a>-</a><input type="text" placeholder="1"/><a>+</a>
                     </div>
                     <div>
-                        <span>价格：</span><span class="price">￥{{parseInt(details.price).toFixed(2)}}</span>
+                        <span>价格：</span><span  class="price">￥{{parseInt(details.price).toFixed(2)}}</span>
                     </div>
                     <div class="mt-4">
                         <a href="" class="shop">立即购买</a>
-                        <a href="" class="cart">加入购物车</a>
+                        <a href="javascript:;" @click="addCart" class="cart" :data-lid="details.lid" :data-title="details.title" :data-price="details.price">加入购物车</a>
                     </div>
                 </div>
             </div>
@@ -87,7 +87,10 @@ export default {
         return{
             details:{},
             dpics:[],
-            pics:[]
+            pics:[],
+            lid:"",
+            title:"",
+            price:""
         }
     },
     props:["lid"],
@@ -109,6 +112,21 @@ export default {
                     this.pics=pics;
                 })
             }
+        },
+        addCart(e){
+            e.preventDefault();
+            var lid=e.target.dataset.lid;
+            console.log(lid);
+            var title=e.target.dataset.title;
+            var price=e.target.dataset.price;
+            var obj={lid:lid,title:title,price:price}
+            this.axios("http://localhost:5050/cart",{params:obj})
+            .then(res=>{
+                console.log(res);
+                if(res.data.code==1){
+                    confirm("添加成功");
+                }
+            })
         }
     }
 }
