@@ -14,18 +14,19 @@
                 </div>
                 <hr/>
             </header>
-            <div class="row">
+            <div>
+                <div class="row">
                 <div class="col m-4 pt-4">
                     <span>用&nbsp;&nbsp;户&nbsp;&nbsp;名：</span>
-                    <input v-model="uname" type="text" class="w-50" name="username"/>
+                    <input @focus="focus" @blur="blur" v-model="uname" type="text" class="w-50" name="username"/>
                     <span>*</span>
                     <span class="vali_info">请输入3-15位以字母开头的字母或数字</span>
                 </div>
             </div>
-            <div class="row">
-                <div class="col m-4" >
+            <div class="row pwd_row">
+                <div class="col m-4 " >
                     <span>&nbsp;密&nbsp;&nbsp;&nbsp;码&nbsp;&nbsp;&nbsp;：</span>
-                    <input v-model="pwd" type="password" class="w-50" name="pwd"/>
+                    <input  @focus="focus" @blur="blur" v-model="pwd" type="password" class="w-50" name="pwd"/>
                     <span>*</span>
                     <span class="vali_info">请输入4-10的字母或数字</span>
                 </div>
@@ -33,7 +34,7 @@
             <div class="row">
                 <div class="col m-4">
                     <span>确认密码：</span>
-                    <input type="password" class="w-50" name="rpwd"/>
+                    <input @focus="focus" @blur="blur" type="password" class="w-50" name="rpwd"/>
                     <span>*</span>
                     <span class="vali_info">请再一次确认密码</span>
                 </div>
@@ -41,7 +42,7 @@
             <div class="row">
                 <div class="col m-4">
                     <span>&nbsp;邮&nbsp;&nbsp;&nbsp;箱&nbsp;&nbsp;&nbsp;：</span>
-                    <input v-model="email" type="text" class="w-50" name="email"/>
+                    <input @focus="focus" @blur="blur" v-model="email" type="text" class="w-50" name="email"/>
                     <span>*</span>
                     <span class="vali_info">请输入正确的邮箱</span>
                 </div>
@@ -60,13 +61,14 @@
             </div>
             <div class="row">
                 <div class="col m-4 text-center">
-                    <button @click="commit" class="w-25 comit">提交</button>
+                    <button @click="commit" class="w-25 comit">注册</button>
                 </div>
             </div>
             <div class="row">
                 <div class="col m-5 text-center">
                     <span class="copy">Copyright © 2018 好学图书音像商城. All Rights Reserved 本站内容、图片、视频为网站模板演示数据，如有涉及侵犯版权，请联系我们提供书面反馈，我们核实后会立即删除。 　</span>
                 </div>
+            </div>
             </div>
         </div>
     </div>
@@ -99,8 +101,53 @@ export default {
                     this.$router.push("/login")
                 }
             })
+        },
+        focus(e){
+            var txtName=document.getElementsByName("username")[0];
+            var txtPwd=document.getElementsByName("pwd")[0];
+            var txtRpwd=document.getElementsByName("rpwd")[0];
+            var txtEmail=document.getElementsByName("email")[0];
+            var span=e.target.parentNode.children[3];
+            span.className="";
+        },
+        vali(reg){
+            // 定义公用的正则验证函数
+
+            // 获得需要修改的元素对象
+            var span=e.target.parentNode.children[3];
+            // 如果正则表达式验证通过，就把span的样式改为vali_success
+            if(reg.test(e.target.value)==true){
+                span.className="vali_success";
+            }else{
+                // 否则，就改为vali_fail
+                span.className="vali_fail";
+            }
+        },
+        blur(e){
+            var reg=/^[a-zA-Z][a-zA-Z0-9]{3,15}$/;
+            // 调用公用的vali函数，调用call函数，改变this的指向
+            vali.call(e.target,reg);
+            // 定义正则表达式
+            var reg=/^[a-zA-Z0-9]{4,10}$/;
+            // 调用公用的vali函数，调用call函数，改变this的指向
+            vali.call(e.target,reg);
+            // 定义正则表达式
+            // var reg=/^([0-9A-Za-z\-_\.]+)@([0-9a-z]+\.[a-z]{2,3}(\.[a-z]{2})?)$/g;
+            // // 调用公用的vali函数，调用call函数，改变this的指向
+            // vali.call(e.target,reg);
+            // var span=e.target.parentNode.children[3];
+            // if(e.target.value===""){
+            //     span.className="vali_fail";
+            //     span.innerHTML="<span style='color:red'>密码不能为空<span>";
+            // }else if(e.target.value===txtPwd.value){
+            //     span.className="vali_success";
+            // }else{
+            //     span.innerHTML="<span style='color:red'>密码不一致<span>";
+            //     span.className="vali_rfail";
+            // }
         }
     },
+    
 }
 </script>
 
@@ -146,8 +193,8 @@ div>input+span{
     width:0px;height:20px;
     overflow:hidden;
     position: absolute;
-    top: 5px;
-    left: 640px;
+    top: 24px;
+    left: 626px;
 
 }
 /* 验证消息：验证失败时的样式 */

@@ -35,8 +35,9 @@
                     <div>
                         <span>规格：</span><a href="" class="spec" v-text="details.spec"></a>
                     </div>
-                    <div class="product_count mt-3">
-                        <span>数量：</span><a>-</a><input type="text" placeholder="1"/><a>+</a>
+                    <div class="product_count mt-3" @click="handle">
+                        <span>数量：</span><a href="javascript:;">-</a> <input type="text" v-model="value"/>
+                        <a href="javascript:;">+</a>
                     </div>
                     <div>
                         <span>价格：</span><span  class="price">￥{{parseInt(details.price).toFixed(2)}}</span>
@@ -90,7 +91,9 @@ export default {
             pics:[],
             lid:"",
             title:"",
-            price:""
+            price:"",
+            count:"",
+            value:"1"
         }
     },
     props:["lid"],
@@ -105,7 +108,7 @@ export default {
                     lid:this.lid
                     }
                 }).then(result=>{
-                    console.log(result.data);
+                    // console.log(result.data);
                     var {details,dpics,pics}=result.data;
                     this.details=details;
                     this.dpics=dpics;
@@ -116,10 +119,11 @@ export default {
         addCart(e){
             e.preventDefault();
             var lid=e.target.dataset.lid;
-            console.log(lid);
+            // console.log(lid);
             var title=e.target.dataset.title;
             var price=e.target.dataset.price;
-            var obj={lid:lid,title:title,price:price}
+            var count=this.value;
+            var obj={lid:lid,title:title,price:price,count:count}
             this.axios("http://localhost:5050/cart",{params:obj})
             .then(res=>{
                 console.log(res);
@@ -127,6 +131,23 @@ export default {
                     confirm("添加成功");
                 }
             })
+        },
+        handle(e){
+            var a=e.target;
+            // console.log(a);
+            var count=this.value;
+            if(a.innerHTML=="+"){
+                count++;
+                this.value=count;
+            }else{
+                if(count<=0){
+                    count=0;
+                    
+                }else{
+                    count--;
+                }
+                this.value=count;
+            }
         }
     }
 }

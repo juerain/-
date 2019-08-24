@@ -11,12 +11,13 @@ router.get("/",(req,res)=>{
     console.log(lid);
     var title=req.query.title;
     var price=req.query.price;
+    var count=req.query.count;
     var sql="SELECT cid FROM sh_cart WHERE lid=?";
     
     pool.query(sql,[lid],(err,result)=>{
         var sql="";
         if(result.length==0){
-            sql=`INSERT INTO sh_cart VALUES(null,${lid},'${title}',${price},1)`;
+            sql=`INSERT INTO sh_cart VALUES(null,${lid},'${title}',${price},${count})`;
         }else{
             sql=`UPDATE sh_cart SET count=count+1 WHERE lid=${lid}`;
         }
